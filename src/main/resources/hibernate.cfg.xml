@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:sqlserver://localhost\NGUYENNTTSE6232\NGUYENNTT:1433;database=NU_DB</property>
+    <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="connection.username">sa</property>
+    <property name="connection.password">12345</property>
+    <mapping class="crawler.model.Group"/>
+    <mapping class="crawler.model.Origin"/>
+    <mapping class="crawler.model.People"/>
+    <mapping class="crawler.model.Project"/>
+    <mapping class="crawler.model.Publisher"/>
+    <mapping class="crawler.model.Update"/>
+    <mapping class="crawler.model.UpdateInfo"/>
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
