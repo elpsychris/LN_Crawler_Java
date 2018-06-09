@@ -15,6 +15,9 @@ public class ProjectSpider extends Spider {
 
     boolean inProjectList = false;
     boolean inProjectRow = false;
+    boolean inFirstDiv = false;
+
+    int count = 0;
 
     void parse(String url, XMLEventReader reader) {
         while (reader.hasNext()) {
@@ -22,9 +25,7 @@ public class ProjectSpider extends Spider {
                 XMLEvent event = reader.nextEvent();
 
                 if (event.isStartElement()) {
-                    System.out.println("Found a start Element");
                     StartElement startE = (StartElement) event;
-                    System.out.println(startE.getName());
 
                     if (startE.getName().toString().equals("main")) {
                         if (StAXUtil.extractAttr(startE, "class").equals("sect-body listext-table widthfluid clear")) {
@@ -33,13 +34,28 @@ public class ProjectSpider extends Spider {
                     } // end check name
 
                     if (inProjectList && startE.getName().toString().equals("article")) {
-                        if (!StAXUtil.extractAttr(startE,"class").contains("top")) {
+                        if (!StAXUtil.extractAttr(startE, "class").contains("top")) {
                             inProjectRow = true;
                         }// check if not header article
+                    }
+
+                    if (inProjectRow && startE.getName().toString().equals("div")) {
+                        inFirstDiv = true;
+                    }
+
+                    if (inFirstDiv && startE.getName().toString().equals("a")) {
+                        System.out.println(StAXUtil.extractAttr(startE, "href"));
+                        String result = reader.getElementText();
+                        System.out.println("Name: " + result);
+                        count++;
+
+                        inFirstDiv = false;
+                        inProjectRow = false;
                     }
                 }
             } catch (XMLStreamException e) {
                 e.printStackTrace();
+                System.out.println("Total " + count);
             }
         }
 

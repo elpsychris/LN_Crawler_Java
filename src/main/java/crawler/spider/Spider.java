@@ -59,7 +59,7 @@ abstract class Spider {
             while ((inputLine = bufferedReader.readLine()) != null) {
                 String cleaned = StAXUtil.cleanString(inputLine);
                 content += inputLine + "\n";
-                writer.write(cleaned + "\n");
+                writer.write(cleaned);
             }
 
             bufferedReader.close();

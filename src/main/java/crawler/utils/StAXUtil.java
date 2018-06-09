@@ -34,7 +34,6 @@ public class StAXUtil {
     public static String cleanString(String raw) {
         // clean entity reference in text
         String cleaned = raw.replaceAll("&[a-zA-Z]+=[A-Za-z]+","%29");
-
         // clean unclosed tag
         //img
         boolean isImgExist = true;
@@ -57,6 +56,6 @@ public class StAXUtil {
                 isImgExist = false;
             }
         }
-        return cleaned;
+        return cleaned.trim();
     }
 }
