@@ -16,7 +16,7 @@ abstract class Spider {
     final String DEFAULT_PARENT_PATH = "src/main/java/crawl_temp";
 
     interface ParserHandler {
-        public void onParse(boolean silent) throws InterruptedException;
+        public void onParse(boolean silent, XMLEventReader reader) throws InterruptedException;
 
         public void onError(Exception e);
     }
@@ -77,7 +77,7 @@ abstract class Spider {
     void execute(List<String> startUrls) throws FileNotFoundException, XMLStreamException {
         if (startUrls != null) {
             for (String url : startUrls) {
-//                getContent(DEFAULT_PARENT_PATH + "/page", url);
+                getContent(DEFAULT_PARENT_PATH + "/page", url);
                 XMLEventReader reader = StAXUtil.getEventReader(DEFAULT_PARENT_PATH + "/page");
                 parse(url, reader);
             } // end for
@@ -90,8 +90,13 @@ abstract class Spider {
             for (String url : startUrls) {
                 getContent(url, DEFAULT_PARENT_PATH + "/page");
                 try {
-                    handler.onParse(false);
+                    XMLEventReader reader = StAXUtil.getEventReader(DEFAULT_PARENT_PATH + "/page");
+                    handler.onParse(false, reader);
                 } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (XMLStreamException e) {
                     e.printStackTrace();
                 }
             } // end for
