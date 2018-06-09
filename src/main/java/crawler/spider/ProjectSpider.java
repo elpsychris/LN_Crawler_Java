@@ -20,7 +20,8 @@ public class ProjectSpider extends Spider {
     int count = 0;
 
     void parse(String url, XMLEventReader reader) {
-        while (reader.hasNext()) {
+        boolean cont = true;
+        while (reader.hasNext() && cont) {
             try {
                 XMLEvent event = reader.nextEvent();
 
@@ -54,11 +55,10 @@ public class ProjectSpider extends Spider {
                     }
                 }
             } catch (XMLStreamException e) {
-                e.printStackTrace();
-                System.out.println("Total " + count);
+            } catch (NullPointerException e) {
+                cont = false;
             }
         }
-
 
     }
 }

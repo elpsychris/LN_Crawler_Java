@@ -16,6 +16,7 @@ public class StAXUtil {
         XMLInputFactory factory = XMLInputFactory.newInstance();
         factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, false);
         factory.setProperty(XMLInputFactory.IS_VALIDATING, false);
+        factory.setProperty(XMLInputFactory.IS_COALESCING, true);
 
 
         XMLEventReader reader = null;

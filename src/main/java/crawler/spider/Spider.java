@@ -58,8 +58,7 @@ abstract class Spider {
             String content = "";
             while ((inputLine = bufferedReader.readLine()) != null) {
                 String cleaned = StAXUtil.cleanString(inputLine);
-                content += inputLine + "\n";
-                writer.write(cleaned);
+                writer.write(cleaned + "\n");
             }
 
             bufferedReader.close();
@@ -78,7 +77,7 @@ abstract class Spider {
     void execute(List<String> startUrls) throws FileNotFoundException, XMLStreamException {
         if (startUrls != null) {
             for (String url : startUrls) {
-                getContent(DEFAULT_PARENT_PATH + "/page", url);
+//                getContent(DEFAULT_PARENT_PATH + "/page", url);
                 XMLEventReader reader = StAXUtil.getEventReader(DEFAULT_PARENT_PATH + "/page");
                 parse(url, reader);
             } // end for
