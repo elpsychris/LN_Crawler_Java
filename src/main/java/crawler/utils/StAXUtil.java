@@ -34,8 +34,12 @@ public class StAXUtil {
 
     public static String cleanString(String raw) {
         // clean entity reference in text
-        String cleaned = raw.replaceAll("&[a-zA-Z]+=[A-Za-z]+","%29");
-        // clean unclosed tag
+        String cleaned = raw.replaceAll("&", "%29;");
+        // clean br tag
+        cleaned = cleaned.replaceAll("<br>", "");
+        cleaned = cleaned.replaceAll("<br/>", "");
+        cleaned = cleaned.replaceAll("</br>", "");
+
         //img
         boolean isImgExist = true;
         Pattern pattern = Pattern.compile("<img src=\"[^\"]+\">");
@@ -49,7 +53,7 @@ public class StAXUtil {
                 pos = cleaned.indexOf(tagString) + tagString.length();
                 if (pos < cleaned.length()) {
                     cleaned = cleaned.substring(0, pos) + tagString + "</img>" + cleaned.substring(pos + 1, cleaned.length());
-                } else  {
+                } else {
                     cleaned = cleaned + "</img>";
                     isImgExist = false;
                 }
@@ -57,6 +61,21 @@ public class StAXUtil {
                 isImgExist = false;
             }
         }
+        return cleaned.trim();
+    }
+
+    public static String cleanDocument(String rawDoc) {
+        String cleaned = rawDoc;
+        Pattern pattern = Pattern.compile("<[^!>]+<");
+        Matcher matcher = pattern.matcher(cleaned);
+
+        while (matcher.find()) {
+            String matchedStr = matcher.group(0);
+            int pos = cleaned.indexOf(matchedStr) + matchedStr.length() - 1;
+            cleaned = cleaned.substring(0, pos - 1) + ">" + cleaned.substring(pos - 1);
+        }
+
+
         return cleaned.trim();
     }
 }

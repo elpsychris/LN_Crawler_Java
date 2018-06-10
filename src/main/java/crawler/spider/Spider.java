@@ -29,11 +29,17 @@ abstract class Spider {
             e.printStackTrace();
         } catch (XMLStreamException e) {
             e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 
     public void setStartUrls(List<String> startUrls, ParserHandler handler) {
-        execute(startUrls, handler);
+        try {
+            execute(startUrls, handler);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void setStartUrls(String startUrl) {
@@ -43,23 +49,44 @@ abstract class Spider {
     }
 
     //
-    private void getContent(String filePath, String uri) {
+    private void getContent(String filePath, String uri) throws InterruptedException {
         Writer writer = null;
         try {
             URL url = new URL(uri);
             URLConnection connection = url.openConnection();
             connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11");
-            InputStream is = connection.getInputStream();
+            connection.setDefaultUseCaches(false);
+            InputStream is = null;
+            boolean cont = true;
+            while (cont) {
+                try {
+                    is = connection.getInputStream();
+                    cont = false;
+                    Thread.sleep(1000);
+                } catch (IOException e) {
+                    System.out.println("Failed to connect to " + url);
+                    System.out.println(e.getMessage());
+                    connection.setReadTimeout(1000);
+                    Thread.sleep(10000);
+                    cont = true;
+                    connection = url.openConnection();
+                    connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11");
+                }
+            }
 
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
             writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filePath), "UTF-8"));
 
             String inputLine;
-            String content = "";
+            String document = "";
             while ((inputLine = bufferedReader.readLine()) != null) {
-                String cleaned = StAXUtil.cleanString(inputLine);
-                writer.write(cleaned + "\n");
+                if (inputLine.trim().isEmpty()) {
+                    continue;
+                }
+                document = document + StAXUtil.cleanString(inputLine) + "\n";
             }
+            document = StAXUtil.cleanDocument(document);
+            writer.write(document);
 
             bufferedReader.close();
             writer.close();
@@ -74,7 +101,7 @@ abstract class Spider {
     abstract void parse(String startUrl, XMLEventReader reader);
 
     //
-    void execute(List<String> startUrls) throws FileNotFoundException, XMLStreamException {
+    private void execute(List<String> startUrls) throws FileNotFoundException, XMLStreamException, InterruptedException {
         if (startUrls != null) {
             for (String url : startUrls) {
                 getContent(DEFAULT_PARENT_PATH + "/page", url);
@@ -85,10 +112,10 @@ abstract class Spider {
     }
 
     //
-    void execute(List<String> startUrls, ParserHandler handler) {
+    private void execute(List<String> startUrls, ParserHandler handler) throws InterruptedException {
         if (startUrls != null) {
             for (String url : startUrls) {
-                getContent(url, DEFAULT_PARENT_PATH + "/page");
+                getContent(DEFAULT_PARENT_PATH + "/page", url);
                 try {
                     XMLEventReader reader = StAXUtil.getEventReader(DEFAULT_PARENT_PATH + "/page");
                     handler.onParse(false, reader);

@@ -4,53 +4,37 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <base href="https://ln.hako.re/"><!--[if IE]></base><![endif]-->
-
-<title>Danh sách truyện - Cổng Light Novel</title>
-
-<meta name="keywords" content="cổng light novel, đọc light novel, tiếng việt, tv, anime, manga, light novel, light novel convert, novel, thư viện, ecchi, comedy, school life, romance, sonako, hako, hako.re, harem, sword art online, baka to test, overlord, mushoku tensei, cô gái văn chương, light novel vietsub, youkoso, konosuba, You-Zitsu, Classroom of the Elite, Kumo Desu Ga Nani Ka, OLN, Overlord, Sáng tác, Sáng tác OLN, viết truyện, sáng tác light novel, oln, truyện tự sáng tác, truyện tiếng việt">
-<meta name="description" content="Thư viện Light Novel Tiếng Việt lớn nhất, chất lượng cao, cập nhật liên tục, nhiều chức năng hỗ trợ việc đọc truyện được dễ dàng...">
+<title>Elf-san with Master - Cổng Light Novel</title>
+<meta name="keywords" content="Elf-san,with,Master">
+<meta name="description" content="Bị xe tải tông chết, Kisaragi Akiyo đầu thai và nhận cheat. 1 thanh niên khác cũng chết nhưng số đen hơn, ko nhận đc cheat và bị hóa thành 1 cô gái elf Rồi %29;quot;cô%29;quot; thành nô lệ của Kisaragi Akiyo. Câu chuyện kể về những ngày thường nhật...">
 <meta name="theme-color" content="#000">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+<meta property="og:image" content="https://3.bp.blogspot.com/-R209YuOdxbA/WWS-6qGtyHI/AAAAAAAAgGM/9l1tMkSHEfMFY6Vf0_3qY1q4uW-liQDVwCHMYCw/s0/default.jpg">
 <meta property="fb:app_id" content="1864643850436909" />
-
 <link rel="shortcut icon" href="img/favicon.png?v=3">
 <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png?v=3">
-
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
-
 <script src="scripts/jquery/jquery-2.1.4.min.js"></script>
 <script src="scripts/js.cookie-2.1.3.min.js"></script>
 <script src="scripts/default.js"></script>
 <script src="scripts/scroll-up-bar.min.js"></script>
-
 <script src="scripts/moment.min.js"></script>
 <script src="scripts/livestamp.js"></script>
-
-<link rel="stylesheet" type="text/css" href="scripts/plugins/tooltipster/tooltipster.bundle.min.css">
-<link rel="stylesheet" type="text/css" href="scripts/plugins/tooltipster/tooltipster-sideTip-borderless.min.css">
-<script type="text/javascript" src="scripts/plugins/tooltipster/tooltipster.bundle.min.js"></script>
-
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
 ga('create', 'UA-34864968-3', 'auto');
 ga('send', 'pageview');
-
 </script>
 </head>
-
 <body>
 <div id="page-top"></div>
 <div data-scrollto="#page-top" class="backtoTop"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
@@ -61,28 +45,19 @@ ga('send', 'pageview');
 <span class="sidenav-icon_white"></span>
 <span class="sidenav-icon_white"></span>
 </div>
-
 <div class="navbar-logo-wrapper">
 <a href="" class="navbar-logo" style="background-image: url('img/logo-9.png')"></a>
 </div>
-
 <ul class="navbar-menu unstyled none block-l block-xl">
 <li><a class="nav-menu_item" href=""><i class="fa fa-home" aria-hidden="true"></i><span class="">Trang chủ</span></a></li>
-
 <li><a class="nav-menu_item" href="sang-tac"><i class="fa fa-pencil" aria-hidden="true"></i><span class="">Sáng tác</span></a></li>
-
 <li><a class="nav-menu_item" href="convert"><i class="fa fa-book" aria-hidden="true"></i><span class="">Convert</span></a></li>
-
 <li><a class="nav-menu_item" href="thao-luan"><i class="fa fa-users" aria-hidden="true"></i><span class="">Thảo luận</span></a></li>
-
 <li><a class="nav-menu_item" href="danh-sach"><i class="fa fa-th-list" aria-hidden="true"></i><span class="">Danh sách</span></a></li>
-
 <li><a class="nav-menu_item" href="tim-kiem"><i class="fa fa-search" aria-hidden="true"></i><span class="">Tìm kiếm</span></a></li>
 </ul>
-
 <!--<section id="nav-search"></section>-->
 <div id="navbar-user" class="clear">
-
 <div id="navbar-user" class="guest">
 <a href="login">Đăng nhập</a>
 </div>
@@ -98,194 +73,240 @@ ga('send', 'pageview');
 </ul>
 </div>
 </div>-->
-
-<main id="mainpart" class="browser-page">
-<header class="page-header">
-<div class="container"><h2>Danh sách truyện</h2></div>
-</header>
-<div class="browse-alphabet">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1%29;version=v2.12%29;appId=1864643850436909";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<main id="mainpart" class="project-page">
+<section class="feature-section basic-section clear">
+<div class="container mg_auto">
+<main class="sect-body clear">
+<article class="listall-item clear">
+<div class="col-12 col-9-l right-l">
+<div class="fea-badge_header clear">
+<span class="fea-badge">Truyện dịch</span>
+<div class="fea-last_update">
+<div style="display: flex" class="clear">
+<span class="fea-l_u-icon"><i class="fa fa-calendar" aria-hidden="true"></i> <div class="none inline-l">Lần cuối</div> </span>
+<span class="fea-l_u-time">
+11/07/2017 23:20:17
+</span>
+</div>
+</div>
+</div>
+<h2 class="listall_title animation fade-in-up">
+<a href="https://ln.hako.re/truyen/1190-elf-san-with-master">Elf-san with Master</a>
+</h2>
+</div>
+<div class="listall_img col-12 col-3-l">
+<div class="a6-ratio" style="border: 1px solid #f0f0f0;">
+<div class="content img-in-ratio" style="background-image: url('https://3.bp.blogspot.com/-R209YuOdxbA/WWS-6qGtyHI/AAAAAAAAgGM/9l1tMkSHEfMFY6Vf0_3qY1q4uW-liQDVwCHMYCw/w220/default.jpg')">
+</div>
+</div>
+</div>
+<div class="listall-detail col-12 col-9-l">
+<div class="listall-user group-mem">
+<img width="50px" height="50px" src="img/noava.png"/>
+<div class="listall-user-title">
+<span class="listall-user_name"><a href="https://ln.hako.re/thanh-vien/4489">Lacus</a></span>
+</div>
+</div>
+<div class="mobile-toggle clear">
+<header class="inline-block none-l" style="margin-bottom: 15px;">Sơ lược</header>
+<div class="sect-body none force-block-l">
+<div class="listall_summary none force-block-l" style="overflow: hidden; position: relative; margin-bottom: 0">
+<p>Bị xe tải tông chết, Kisaragi Akiyo đầu thai và nhận cheat.</p>
+<p>1 thanh niên khác cũng chết nhưng số đen hơn, ko nhận đc cheat và bị hóa thành 1 cô gái elf</p>
+<p>Rồi "cô" thành nô lệ của Kisaragi Akiyo. Câu chuyện kể về những ngày thường nhật của một nô lệ elf bên cạnh cheat master của mình.</p>
+<p>(em nó là cái ảnh bìa ý)</p>
+<div class="listall_summary-more" style="width: 100%; position: absolute; bottom: 0; height: 20px; background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(253,253,253,1) 50%, rgba(250,250,250,1) 100%);
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(253,253,253,1) 50%,rgba(250,250,250,1) 100%); background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(253,253,253,1) 50%,rgba(250,250,250,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#fafafa',GradientType=0 );"></div>
+</div>
+<a class="see_more" style="cursor: pointer; float: right; font-weight: bold;"><i class="fa fa-angle-double-down" aria-hidden="true"></i> Xem thêm</a>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+</section>
+<div class="reg-part clear" style="padding-bottom: 20px">
 <div class="container">
-<a class="alphabet_item  current " href="https://ln.hako.re/danh-sach">Tất cả</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/khac">#</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/a">A</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/b">B</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/c">C</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/d">D</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/e">E</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/f">F</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/g">G</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/h">H</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/i">I</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/j">J</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/k">K</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/l">L</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/m">M</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/n">N</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/o">O</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/p">P</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/q">Q</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/r">R</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/s">S</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/t">T</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/u">U</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/v">V</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/w">W</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/x">X</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/y">Y</a>
-<a class="alphabet_item " href="https://ln.hako.re/danh-sach/z">Z</a>
+<div class="col-12" style="margin-bottom: 20px;">
+<div style="border-top: 3px dashed #eaeaea; border-bottom: 3px dashed #eaeaea; padding: 10px 0;">
+<a id="collect" class="button-follow follow button" href="https://ln.hako.re/login"><i class="fa fa-heart" aria-hidden="true"></i></a>
+<a class="catalog-icon none block-l" style="float: right; margin: 5px 10px;; font-size: 30px; cursor: pointer">
+<i class="fa fa-list" aria-hidden="true"></i>
+</a>
+<div class="share-list">
+<div class="fb-like" data-href="https://ln.hako.re/truyen/1190-elf-san-with-master" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false" style="margin-right: 10px;"></div>
+<div class="fb-share-button"
+data-href="https://ln.hako.re/truyen/1190-elf-san-with-master"
+data-layout="button" data-size="small" style="margin-right: 20px;">
+</div>
+<a href="http://twitter.com/share?url=https://ln.hako.re/truyen/1190-elf-san-with-master%29;text=Elf-san with Master" target="_blank" title="Tweet this page on Twitter" class="share-button share-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+<a href="https://plus.google.com/share?url=https://ln.hako.re/truyen/1190-elf-san-with-master" class="share-button share-google" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 </div>
 </div>
-<div class="container clear">
-<div class="reg-part col-12 col-12-m col-1-3-l col-1-4-xl">
-<form method="get">
-<section class="basic-section noheader-section clear">
-<header class="sect-header"><span class="sect-title bottom-line">Phân loại</span></header>
-<main class="sect-body clear">
-<ul class="filter-type unstyled">
-<input type="checkbox" name="truyendich" value="1" checked> Truyện dịch<br>
-<input type="checkbox" name="sangtac" value="1" > Truyện sáng tác<br>
-<input type="checkbox" name="convert" value="1" > Convert<br>
-<input type="submit" class="button" value="Áp dụng">
-</ul>
-</main>
+</div>
+<div id="rd-sidebar" class="reg-part col-12 col-1-3-l float-right-l ">
+<section class="fantrans-section">
+<div class="fantrans-name">Nhóm dịch</div>
+<div class="fantrans-value"><a href="https://ln.hako.re/nhom-dich/61-mot-minh-thoi">Một Mình Thôi</a></div>
 </section>
-
-<section class="basic-section noheader-section clear">
-<header class="sect-header"><span class="sect-title bottom-line">Tình trạng</span></header>
-<main class="sect-body clear">
-<ul class="filter-type unstyled">
-<input type="checkbox" name="dangtienhanh" value="1" checked> Đang tiến hành<br>
-<input type="checkbox" name="tamngung" value="1" checked> Tạm ngưng<br>
-<input type="checkbox" name="hoanthanh" value="1" checked> Đã hoàn thành<br>
-<input type="submit" class="button" value="Áp dụng">
-</ul>
+<section class="ln_info-section basic-section mobile-view">
+<div class="mobile-toggle">
+<header class="inline-block none-l">Giới thiệu</header>
+<!--<header class="sect-header none inline-block-l"><span class="sect-title">Giới thiệu</span></header>-->
+<main class="sect-body none force-block-l clear long-text">
+<div class="ln_info-item clear"><span class="ln_info-name col-5">Số từ</span><span class="ln_info-value col-7">1,646</span></div>
+<div class="ln_info-item clear"><span class="ln_info-name col-5">Tác giả</span><span class="ln_info-value col-7"><a href="https://ln.hako.re/tac-gia/%E3%81%A8%E3%82%8A%E3%81%BE%E3%82%8B">とりまる</a></span></div>
+<div class="ln_info-item clear"><span class="ln_info-name col-5">Họa sĩ</span><span class="ln_info-value col-7"><a href="https://ln.hako.re/hoa-si/UNKNOWN">UNKNOWN</a></span></div>
+<div class="ln_info-item clear"><span class="ln_info-name col-5">Tình trạng</span><span class="ln_info-value col-7"><a href="https://ln.hako.re/truyen-dang-tien-hanh">Đang tiến hành</a></span></div>
+<div class="ln_info-item clear"><span class="ln_info-name col-5">Thể loại</span><span class="ln_info-value col-7">
+<a href="https://ln.hako.re/the-loai/adventure">Adventure</a>, <a href="https://ln.hako.re/the-loai/ecchi">Ecchi</a>, <a href="https://ln.hako.re/the-loai/fantasy">Fantasy</a>, <a href="https://ln.hako.re/the-loai/gender-bender">Gender Bender</a>, <a href="https://ln.hako.re/the-loai/mature">Mature</a>
+</span></div>
+<div class="ln_info-item clear"><span class="ln_info-name col-5">Lượt xem</span><span class="ln_info-value col-7">7,678</span></div>
+<div class="ln_info-item clear"><span class="ln_info-name col-5">Theo dõi</span><span class="ln_info-value col-7">95</span></div>
+<div class="ln_info-item clear"><span class="ln_info-name col-5">Bình luận</span><span class="ln_info-value col-7"><a href="https://ln.hako.re/truyen/1190-elf-san-with-master#facebook-comments">Facebook</a></span></div>
+<div class="ln_info-item clear"><span class="ln_info-name col-5">Tên khác</span><span class="ln_info-value col-7">                        <span style="display: block; margin-bottom: 10px;">Cheat of his different world Harem</span>
+<span style="display: block; margin-bottom: 10px;">ご主人さまとエルフさん</span>
+</span></div>
 </main>
+</div>
 </section>
-</form>
-
-
-
-<section class="filter-section basic-section clear">
-<header class="sect-header"><span class="sect-title bottom-line">Thể loại</span></header>
-<main class="sect-body clear">
-<ul class="filter-type unstyled">
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/action">Action</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/adult">Adult</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/adventure">Adventure</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/comedy">Comedy</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/drama">Drama</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/ecchi">Ecchi</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/fantasy">Fantasy</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/gender-bender">Gender Bender</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/harem">Harem</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/horror">Horror</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/incest">Incest</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/isekai">Isekai</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/mature">Mature</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/mecha">Mecha</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/mystery">Mystery</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/netorare">Netorare</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/psychological">Psychological</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/romance">Romance</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/school-life">School Life</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/science-fiction">Science Fiction</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/seinen">Seinen</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/shoujo">Shoujo</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/shoujo-ai">Shoujo ai</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/shounen">Shounen</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/shounen-ai">Shounen ai</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/slice-of-life">Slice of Life</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/sports">Sports</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/super-power">Super Power</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/supernatural">Supernatural</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/suspense">Suspense</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/tragedy">Tragedy</a>
-<li class="filter-type_item"><a href="https://ln.hako.re/the-loai/web-novel">Web Novel</a>
-</ul>
-<!--<ul class="filter-type unstyled"><span class="filter-name">Tình trạng</span>
-<li class="filter-type_item"><input type="Checkbox" Name="" ID="" Value=""><a href="">Đang tiến hành</a></li>
-<li class="filter-type_item"><input type="Checkbox" Name="" ID="" Value=""><a href="">Tạm dừng</a></li>
-<li class="filter-type_item"><input type="Checkbox" Name="" ID="" Value=""><a href="">Hoàn thành</a></li>
-</ul>
-<span class="filter-button button">Áp dụng</span>-->
+<section class="ln_info-section basic-section mobile-view">
+<div class="mobile-toggle">
+<header class="inline-block none-l">Chú thích thêm</header>
+<header class="sect-header none inline-block-l"><span class="sect-title">Chú thích thêm</span></header>
+<main class="sect-body none force-block-l clear long-text" style="word-wrap: break-word;">
+<p>eng có 4 chap. đm nó. cơ mà khá hay nên up lên thử xem ntn.</p>
 </main>
+</div>
+</section>
+<section id='list-vol' class="none list_vol-section basic-section">
+<div class="list-volume-wrapper">
+<header class="sect-header triangle text-center"><span class="sect-title bottom-line">Mục lục</span></header>
+<span class="list-vol_off">
+<i class="fa fa-times" aria-hidden="true"></i>
+</span>
+<ol class="list-volume unstyled no-margin no-padding">
+<li data-scrollTo="#volume_3122"><span class="list_vol-order">01.</span><span class="list_vol-title">Web Novel</span></li>
+</ol>
+</div>
 </section>
 </div>
-<div class="reg-part col-12 col-12-m col-2-3-l col-3-4-xl">
-
-<section class="browse-section noheader-section col-12">
-<main class="sect-body listext-table widthfluid clear">
-<article class="listext-item listext-top clear">
-<div class="listext_attr listext_title col-12 col-2-3-m col-6-l" href="">Tên truyện</div>
-<div class="listext_attr none inline-m col-1-3-m col-3-l">Chương mới nhất</div>
-<div class="listext_attr none inline-l col-3-l">Tình trạng</div>
-</article>
+<div class="reg-part col-12 col-2-3-l">
+<section class="basic-section mobile-view">
+<div class="mobile-toggle">
+<header class="inline-block none-l">Thảo luận</header>
+<header class="sect-header none block-l"><span class="sect-title">Thảo luận</span></header>
+<main class="sect-body none block-l clear">
+<div class="relate-topic new-page clear">
+<a href="https://ln.hako.re/action/page/create?series_id=1190">
+<div class="inside">
+<i class="fa fa-plus" aria-hidden="true"></i> Tạo bài viết mới
+</div>
+</a>
+</div>
+</main>
+</div>
+</section>
+<section class="ln_chapters-volume basic-section mobile-view  clear">
+<div class="mobile-toggle">
+<header class="inline-block none-l mobile-toggle_header"><i class="fa fa-clone" aria-hidden="true"></i>Web Novel</header>
+<header id="volume_3122" class="sect-header vol-header none block-l"><span class="sect-title"><a href="https://ln.hako.re/truyen/1190-elf-san-with-master/t3122-web-novel">Web Novel</a></span></header>
+<main class="sect-body mobile-toggle_body force-block-l none clear">
+<div class="ln_chapters-vol_img col-3 col-3-m col-2-l col-2-xl">
+<a href="https://ln.hako.re/truyen/1190-elf-san-with-master/t3122-web-novel">
+<img src="img/nocover.png"></img>
+</a>
+<a style="display: block; float: right; margin: 5px; font-size: 20px;" class="download-icon  disabled " href=""><i class="fa fa-download" aria-hidden="true"></i></a>
+</div>
+<div class="ln_chapters-vol_main listext-table col-9 col-9-m col-10-l col-10-xl">
 <article class="listext-item clear">
-<div class="listext_attr listext_title col-12 col-2-3-m col-6-l">
-<a href="https://ln.hako.re/truyen/387-zombie-no-afureta-sekai-de-ore-dake-ga-osowarenai" class="tooltip" data-tooltip-content="#series_387">Zombie no Afureta Sekai de Ore Dake ga Osowarenai</a>
-<small class="listext_title-translate">Truyện dịch</small>
+<div class="listext_attr col-12 col-9-m col-8-l col-9-xl">
+<a href="https://ln.hako.re/truyen/1190-elf-san-with-master/c20785-chuong-01" title="Chương 01">
+Chương 01
+</a>
 </div>
-<div class="listext_attr none inline-m col-1-3-m col-3-l" >
-<a href="https://ln.hako.re/truyen/387-zombie-no-afureta-sekai-de-ore-dake-ga-osowarenai/c15985-chuong-03">Chương 03</a>
-<small style="display: block; opacity: 0.5;">VOL 2</small>
-</div>
-<div class="listext_attr none inline-l col-3-l"><a href="https://ln.hako.re/truyen-dang-tien-hanh">Đang tiến hành</a></div>
-
-<!-- Tooltip -->
-<div style="display: none">
-<div id="series_387" style="font-size: 14px;">
-<div class="listall_img col-4-m" style="margin: 10px 0">
-<img src="https://3.bp.blogspot.com/-kl1XSdUoF9s/WO2wJ9l7CiI/AAAAAAAAKGU/ZrzC35ALEco/w220/series_387.jpg"></img>
-</div>
-<div class="col-8-m" style="margin: 10px 0">
-<h4 style="text-align: left; padding-bottom: 6px; color: white">Zombie no Afureta Sekai de Ore Dake ga Osowarenai</h4>
-Câu truyện bắt đầu từ lúc anh main của chúng ta thất nghiệp vào trở thành neet rùi khi ra ngoài mới biết thế giới đang trải qua một cuộc đại dịch. Mọi người hóa zombie ăn thịt người khác nhưng chỉ có bản thân mình lại ko bị tấn công, lý do tại sao lại như thế ??
-</div>
-</div>
-</div>
-<!-- // Tooltip -->
+<div class="listext_attr l_c-v_m-time none inline-m col-3-m col-4-l col-3-xl listext_attr listext_attr">11/07/2017</div>
 </article>
-</main>
-
-<footer class="sect-footer clear">
-<div class="pagination_wrap">
-<!--<a href=" https://ln.hako.re/danh-sach?page=11 " class="paging_item paging_prevnext prev ">Trước</a>-->
-<a href="https://ln.hako.re/danh-sach?page=1" class="paging_item paging_prevnext prev ">Đầu</a>
-
-<a href="https://ln.hako.re/danh-sach?page=8" class="paging_item page_num ">8</a>
-<a href="https://ln.hako.re/danh-sach?page=9" class="paging_item page_num ">9</a>
-<a href="https://ln.hako.re/danh-sach?page=10" class="paging_item page_num ">10</a>
-<a href="https://ln.hako.re/danh-sach?page=11" class="paging_item page_num ">11</a>
-<a href="https://ln.hako.re/danh-sach?page=12" class="paging_item page_num  current ">12</a>
-
-<!--<a href="" class="paging_item paging_prevnext next  disabled ">Tiếp</a>-->
-<a href="https://ln.hako.re/danh-sach?page=12" class="paging_item paging_prevnext next  disabled ">Cuối</a>
 </div>
-</footer>
+</main>
+</div>
+</section>
+<section class="basic-section mobile-view clear">
+<div class="mobile-toggle">
+<header class="inline-block none-l mobile-toggle_header">Bình luận</header>
+<header class="sect-header vol-header none block-l">
+<span class="vol-title">Bình luận</span>
+<!-- <span id="refresh_comment" style="cursor: pointer; float: right; margin-right: 25px"><i class="fa fa-refresh" aria-hidden="true"></i></span> -->
+</header>
+<main id="fbcmt_root" class="sect-body mobile-toggle_body force-block-l none clear">
+<span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="http://ln.hako.re/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
+<div id="facebook-comments" class="fb-comments" data-href="http://ln.hako.re/truyen/1190-elf-san-with-master" data-width="100%" data-mobile="true" data-numposts="10"></div>
+</main>
+</div>
 </section>
 </div>
 </div>
+</div>
 </main>
-
 <script>
-listab(".tab-section");
-$(".browse-switch").click(function(){
-$(".browse-section").toggleClass("browse-listview");
+token = 'FUrQKXndn3gc8UCWOXJ1L1Wporkw4bpOIriZDdbu';
+$(window).load(function () {
+FB.Event.subscribe('comment.create', function (response) {
+$.post('syncfbcmt/create', {
+_token: token, message_id: response.commentID, origin_type: 'series', origin_id: '1190'
+},
+function (data) {
+if (data.status == 'error') {
+console.log(data.message)
+}
+}, 'json')
 });
-
+FB.Event.subscribe('comment.remove', function (response) {
+$.post('syncfbcmt/remove', {
+_token: token, message_id: response.commentID, origin_type: 'series', origin_id: '1190'
+},
+function (data) {
+if (data.status == 'error') {
+console.log(data.message)
+}
+}, 'json')
+});
+});
+$('#refresh_comment').on('click', function () {
+var _this = $(this)
+_this.addClass('refresher');
+FB.XFBML.parse(document.getElementById('fbcmt_root'));
+setTimeout(function () {
+_this.removeClass('refresher')
+}, 2000)
+})
 $(document).ready(function() {
-$('.tooltip').tooltipster({
-delay: 50,
-side: 'right',
-theme: 'tooltipster-borderless',
-minWidth: 500,
-maxWidth: 500
+listab(".tab-section");
+$('ol.list-volume li').on('click',function(){
+var vol = $(this);
+var scrollTo = vol.data('scrollto');
+$('html, body').animate({scrollTop: $(scrollTo).offset().top});
+});
+$('.catalog-icon').on('click', function(){
+$('#list-vol').toggleClass('animation fade-in-right');
+$('#list-vol').toggle();
+});
+$('.list-vol_off').on('click', function(){
+$('#list-vol').hide();
 });
 });
+series_id = parseInt('1190')
 </script>
-
-
-
+<script src="scripts/series.js?v=20170602"></script>
 <footer id="footer" class="none block-l">
 <div class="container">
 <!--<span><a href="">Hako.re</a></span>-->
@@ -296,14 +317,12 @@ maxWidth: 500
 </div>
 </footer>
 <div id="cbox">
-<iframe id="cboxframe" src="https://www2.cbox.ws/box/?boxid=2389900%29" allowtransparency="yes" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" class="block" style="width: 300px; height: 450px"></iframe>
+<iframe id="cboxframe" src="https://www2.cbox.ws/box/?boxid=2389900%29;boxtag=umoipt" allowtransparency="yes" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" class="block" style="width: 300px; height: 450px"></iframe>
 <span id="cboxtoggle">ĐÓNG</span>
 </div>
-
 <script>
 $(document).ready(function () {
-token = 'EEKXH5WQ8p1OyyKxvqNM5n2LYTOVSpHL7UIMkQQI'
-
+token = 'FUrQKXndn3gc8UCWOXJ1L1Wporkw4bpOIriZDdbu'
 $(".mobile-toggle header").click(function(){
 $(this).parent().find(".listall_summary").toggle();
 $(this).parent().find(".sect-body").toggle();
@@ -311,7 +330,6 @@ $(this).parent().find(".sect-body").toggle();
 $(".navbar-user_toggle").on('click', function(){
 $("#navbar-user").toggle();
 });
-
 $(window).on('scroll', function () {
 if ($(window).scrollTop() > 50) {
 $('.backtoTop').show();
@@ -319,37 +337,27 @@ $('.backtoTop').show();
 $('.backtoTop').hide();
 }
 });
-
 $('.backtoTop').on('click',function(){
 var scrollTo = $(this).data('scrollto');
 $('html, body').animate({scrollTop: $(scrollTo).offset().top});
 });
-
 $('#mainpart').css({'min-height' : $(window).height() - $('#footer').outerHeight(true)})
 $(window).on('resize',function(){
 $('#mainpart').css({'min-height' : $(window).height() - $('#footer').outerHeight(true)})
 })
-
 $( "#sidenav-icon" ).click(function() {
 $( this ).toggleClass( "active" );
 $( ".navbar-menu" ).toggleClass( "none" );
 });
-
 $('#navbar').scrollupbar();
-
 var cboxopen = true;
-
 $('#cboxtoggle').on('click', function() {
 Cookies.set('cboxopen', !cboxopen, { expires: 365 });
-
 $('#cboxframe').toggleClass('block none');
-
 var toggletext = $('#cboxtoggle').text();
 $('#cboxtoggle').text(toggletext == 'CHAT' ? 'ĐÓNG' : 'CHAT');
 });
 });
 </script>
-
-
 </body>
 </html>
