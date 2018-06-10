@@ -10,13 +10,15 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 abstract class Spider {
     final String DEFAULT_PARENT_PATH = "src/main/java/crawl_temp";
 
     interface ParserHandler {
-        public void onParse(boolean silent, XMLEventReader reader) throws InterruptedException;
+        public void onParse(Map.Entry<String, String> page, XMLEventReader reader) throws InterruptedException;
 
         public void onError(Exception e);
     }
@@ -34,7 +36,7 @@ abstract class Spider {
         }
     }
 
-    public void setStartUrls(List<String> startUrls, ParserHandler handler) {
+    public void setStartUrls(Map<String, String> startUrls, ParserHandler handler) {
         try {
             execute(startUrls, handler);
         } catch (InterruptedException e) {
@@ -112,13 +114,13 @@ abstract class Spider {
     }
 
     //
-    private void execute(List<String> startUrls, ParserHandler handler) throws InterruptedException {
+    private void execute(Map<String, String> startUrls, ParserHandler handler) throws InterruptedException {
         if (startUrls != null) {
-            for (String url : startUrls) {
-                getContent(DEFAULT_PARENT_PATH + "/page", url);
+            for (Map.Entry<String, String> page : startUrls.entrySet()) {
+                getContent(DEFAULT_PARENT_PATH + "/page", page.getValue());
                 try {
                     XMLEventReader reader = StAXUtil.getEventReader(DEFAULT_PARENT_PATH + "/page");
-                    handler.onParse(false, reader);
+                    handler.onParse(page, reader);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } catch (FileNotFoundException e) {

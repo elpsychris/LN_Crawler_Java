@@ -197,4 +197,23 @@ public class Project {
     public void setPublisherByProjectPublisher(Publisher publisherByProjectPublisher) {
         this.publisherByProjectPublisher = publisherByProjectPublisher;
     }
+
+    @Override
+    public String toString() {
+        return "Project{" +
+                "projectId=" + projectId +
+                ", projectName='" + projectName + '\'' +
+                ", projectNameOthers='" + projectNameOthers + '\'' +
+                ", projectOriginId=" + projectOriginId +
+                ", projectPubTime=" + projectPubTime +
+                ", projectAuthorId=" + projectAuthorId +
+                ", projectIllustratorId=" + projectIllustratorId +
+                ", projectSynopsis='" + projectSynopsis + '\'' +
+                ", projectHash='" + projectHash + '\'' +
+                ", projectTag='" + projectTag + '\'' +
+                ", projectPublisher=" + projectPublisher +
+                ", originByProjectOriginId=" + originByProjectOriginId +
+                ", publisherByProjectPublisher=" + publisherByProjectPublisher +
+                '}';
+    }
 }

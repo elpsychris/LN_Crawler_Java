@@ -2,6 +2,7 @@ package crawler.spider;
 
 import crawler.model.Project;
 import crawler.utils.StAXUtil;
+import sun.security.x509.OtherName;
 
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLStreamException;
@@ -10,7 +11,9 @@ import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ProjectSpider extends Spider {
     private String xpathProjectElement = "//main[@class='sect-body listext-table widthfluid clear']/article[not(contains(@class,'top'))]/div[1]/a";
@@ -19,7 +22,8 @@ public class ProjectSpider extends Spider {
     private String xpathAuthor = "//div[@class = 'ln_info-item clear']/span[text()='Tác giả']/following-sibling::span/a";
 
     private List<Project> result = new ArrayList<Project>();
-    private List<String> projectDetailList = new ArrayList<String>();
+    private Map<String, String> projectDetailList = new HashMap<String, String>();
+
     private String nextPage;
 
     boolean inProjectList = false;
@@ -31,7 +35,7 @@ public class ProjectSpider extends Spider {
 
     boolean inSynopsisDiv = false;
 
-    String currentE = "";
+    private String currentE = "";
 
     int count = 0;
 
@@ -40,8 +44,11 @@ public class ProjectSpider extends Spider {
 
         setStartUrls(projectDetailList, new ParserHandler() {
             @Override
-            public void onParse(boolean silent, XMLEventReader reader) throws InterruptedException {
-                parseProjectDetailContent(reader);
+            public void onParse(Map.Entry page, XMLEventReader reader) throws InterruptedException {
+                Project project = new Project();
+                project.setProjectName((String) page.getKey());
+
+                parseProjectDetailContent(reader, project);
             }
 
             @Override
@@ -51,15 +58,14 @@ public class ProjectSpider extends Spider {
         });
 
         if (nextPage != null) {
-            this.projectDetailList = new ArrayList<String>();
+            this.projectDetailList = new HashMap<String, String>();
             System.out.println("NEXT PAGE==================\n" + nextPage);
             setStartUrls(nextPage);
         }
     }
 
-    private void parseProjectDetailContent(XMLEventReader reader) {
+    private void parseProjectDetailContent(XMLEventReader reader, Project project) {
         boolean cont = true;
-        Project project = new Project();
 
         while (reader.hasNext() && cont) {
             try {
@@ -71,15 +77,66 @@ public class ProjectSpider extends Spider {
 
                 }
             } catch (XMLStreamException e) {
+//                e.printStackTrace();
             } catch (NullPointerException e) {
+//                e.printStackTrace();
                 cont = false;
             }
         }
-        System.out.println(project.getProjectSynopsis());
+        System.out.println(project.toString());
         System.out.println("================================");
     }
+    private String curInfo = null;
 
     private void parseProjectDetail(XMLEventReader reader, StartElement startE, Project project) throws XMLStreamException {
+        parseSynopsis(reader, startE, project);
+        String otherName = null;
+        String author = null;
+
+        if (startE.getName().toString().equals("span")
+                && StAXUtil.extractAttr(startE, "class").contains("ln_info-name")) {
+            curInfo = reader.getElementText();
+            currentE = "";
+        }
+
+
+        if (startE.getName().toString().equals("a")
+                && currentE.equals("span")) {
+            if (curInfo.equals("Tác giả")) {
+                author = reader.getElementText();
+            }
+        }
+
+        if (startE.getName().toString().equals("span")
+                && currentE.equals("span")) {
+            if (curInfo.equals("Tên khác")) {
+                otherName = reader.getElementText();
+            }
+        } else if (!startE.getName().toString().equals("span")) {
+            currentE = "";
+        }
+
+        if (startE.getName().toString().equals("span")
+                && curInfo != null
+                && StAXUtil.extractAttr(startE, "class").contains("ln_info-value")) {
+            currentE = "span";
+        }
+
+        if (otherName != null) {
+            if (project.getProjectNameOthers() != null) {
+                otherName = project.getProjectNameOthers() + ";" + otherName;
+            }
+
+            project.setProjectNameOthers(otherName);
+        }
+
+        if (author != null) {
+            System.out.println("Author: " + author);
+        }
+    }
+
+
+    private void parseSynopsis(XMLEventReader reader, StartElement startE, Project project) throws XMLStreamException {
         if (startE.getName().toString().equals("div")
                 && StAXUtil.extractAttr(startE, "class").equals("listall_summary none force-block-l")) {
             inSynopsisDiv = true;
@@ -120,9 +177,10 @@ public class ProjectSpider extends Spider {
         }
 
         if (inFirstDiv && startE.getName().toString().equals("a")) {
-            projectDetailList.add(StAXUtil.extractAttr(startE, "href"));
-            String result = reader.getElementText();
-            System.out.println("Name: " + result);
+            String link = StAXUtil.extractAttr(startE, "href");
+            String name = reader.getElementText();
+
+            projectDetailList.put(name, link);
             count++;
 
             inFirstDiv = false;
