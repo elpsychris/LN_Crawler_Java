@@ -1,58 +1,69 @@
 package crawler.spider;
 
 
-import crawler.utils.StAXUtil;
+import crawler.repository.ProjectRepo;
+import crawler.utils.CrawlerUtils;
+import crawler.utils.StAXUtils;
 
-import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLStreamException;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+import java.util.regex.Pattern;
 
 abstract class Spider {
     final String DEFAULT_PARENT_PATH = "src/main/java/crawl_temp";
+    ProjectRepo projectRepo = null;
+
+    public Spider(ProjectRepo projectRepo) {
+        this.projectRepo = projectRepo;
+    }
+
+    private String document = "";
 
     interface ParserHandler {
-        public void onParse(Map.Entry<String, String> page, XMLEventReader reader) throws InterruptedException;
+        public void onParse(String page, InputStream documentInputStream) throws InterruptedException;
 
         public void onError(Exception e);
     }
 
 
-    public void setStartUrls(List<String> startUrls) {
+    public void setStartUrls(List<String> startUrls, Pattern pattern) {
         try {
-            execute(startUrls);
+            execute(startUrls, pattern);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (XMLStreamException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
             e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
         }
     }
 
-    public void setStartUrls(Map<String, String> startUrls, ParserHandler handler) {
+    public void setStartUrls(List<String> startUrls, ParserHandler handler, Pattern pattern) {
         try {
-            execute(startUrls, handler);
+            execute(startUrls, handler, pattern);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    public void setStartUrls(String startUrl) {
+    public void setStartUrls(String startUrl, Pattern pattern) {
         List<String> startUrls = new ArrayList<String>();
         startUrls.add(startUrl);
-        setStartUrls(startUrls);
+        setStartUrls(startUrls, pattern);
     }
 
     //
-    private void getContent(String filePath, String uri) throws InterruptedException {
-        Writer writer = null;
+//    private void getContent(String filePath, String uri) throws InterruptedException {
+//        Writer writer = null;
+    private void getContent(String uri, Pattern pattern) throws InterruptedException {
+        this.document = "";
         try {
             URL url = new URL(uri);
             URLConnection connection = url.openConnection();
@@ -77,21 +88,24 @@ abstract class Spider {
             }
 
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
-            writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filePath), "UTF-8"));
+//            writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filePath), "UTF-8"));
 
             String inputLine;
-            String document = "";
             while ((inputLine = bufferedReader.readLine()) != null) {
                 if (inputLine.trim().isEmpty()) {
                     continue;
                 }
-                document = document + StAXUtil.cleanString(inputLine) + "\n";
+                document = document + StAXUtils.cleanString(inputLine) + "\n";
             }
-            document = StAXUtil.cleanDocument(document);
-            writer.write(document);
+            document = StAXUtils.cleanDocument(document);
+            if (pattern != null) {
+                document = CrawlerUtils.getSubContent(pattern, document);
+            }
+
+//            writer.write(document);
 
             bufferedReader.close();
-            writer.close();
+//            writer.close();
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -100,38 +114,37 @@ abstract class Spider {
     }
 
     //
-    abstract void parse(String startUrl, XMLEventReader reader);
+    abstract void parse(String startUrl, InputStream document);
 
     //
-    private void execute(List<String> startUrls) throws FileNotFoundException, XMLStreamException, InterruptedException {
+    private void execute(List<String> startUrls, Pattern pattern) throws FileNotFoundException, XMLStreamException, InterruptedException, UnsupportedEncodingException {
         if (startUrls != null) {
             for (String url : startUrls) {
-                getContent(DEFAULT_PARENT_PATH + "/page", url);
-                XMLEventReader reader = StAXUtil.getEventReader(DEFAULT_PARENT_PATH + "/page");
-                parse(url, reader);
+                getContent(url, pattern);
+                ByteArrayInputStream documentInputStream = new ByteArrayInputStream(document.getBytes());
+//                XMLEventReader reader = StAXUtils.getEventReader(byteInputStream);
+                parse(url, documentInputStream);
             } // end for
         }// end if
     }
 
     //
-    private void execute(Map<String, String> startUrls, ParserHandler handler) throws InterruptedException {
+    private void execute(List<String> startUrls, ParserHandler handler, Pattern pattern) throws InterruptedException {
         if (startUrls != null) {
-            for (Map.Entry<String, String> page : startUrls.entrySet()) {
-                getContent(DEFAULT_PARENT_PATH + "/page", page.getValue());
+            for (String page : startUrls) {
+                getContent(page, pattern);
                 try {
-                    XMLEventReader reader = StAXUtil.getEventReader(DEFAULT_PARENT_PATH + "/page");
-                    handler.onParse(page, reader);
+                    ByteArrayInputStream documentInputStream = new ByteArrayInputStream(document.getBytes());
+//                    XMLEventReader reader = StAXUtils.getEventReader(byteInputStream);
+                    handler.onParse(page, documentInputStream);
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                } catch (XMLStreamException e) {
                     e.printStackTrace();
                 }
             } // end for
         }// end if
     }
-//
+
+    //
 //    public void close() {
 //        this.webDriver.quit();
 //    }

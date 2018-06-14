@@ -8,11 +8,12 @@ import javax.xml.stream.events.Attribute;
 import javax.xml.stream.events.StartElement;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class StAXUtil {
-    public static XMLEventReader getEventReader(String filePath) throws FileNotFoundException, XMLStreamException {
+public class StAXUtils {
+    public static XMLEventReader getEventReader(InputStream is) throws FileNotFoundException, XMLStreamException {
         XMLInputFactory factory = XMLInputFactory.newInstance();
         factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, false);
         factory.setProperty(XMLInputFactory.IS_VALIDATING, false);
@@ -20,7 +21,7 @@ public class StAXUtil {
 
 
         XMLEventReader reader = null;
-        reader = factory.createXMLEventReader(new FileInputStream(filePath), "UTF-8");
+        reader = factory.createXMLEventReader(is, "UTF-8");
         return reader;
     }
 

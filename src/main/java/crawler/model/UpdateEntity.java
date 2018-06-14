@@ -4,14 +4,14 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
-public class Update {
+@Table(name = "Update", schema = "dbo", catalog = "NU_DB")
+public class UpdateEntity {
     private int updateId;
     private String updateName;
     private String updateVol;
     private Timestamp updateDate;
     private Integer updateGroup;
     private String updateLink;
-    private Group groupByUpdateGroup;
 
     @Id
     @Column(name = "update_id")
@@ -78,14 +78,14 @@ public class Update {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Update update = (Update) o;
+        UpdateEntity that = (UpdateEntity) o;
 
-        if (updateId != update.updateId) return false;
-        if (updateName != null ? !updateName.equals(update.updateName) : update.updateName != null) return false;
-        if (updateVol != null ? !updateVol.equals(update.updateVol) : update.updateVol != null) return false;
-        if (updateDate != null ? !updateDate.equals(update.updateDate) : update.updateDate != null) return false;
-        if (updateGroup != null ? !updateGroup.equals(update.updateGroup) : update.updateGroup != null) return false;
-        if (updateLink != null ? !updateLink.equals(update.updateLink) : update.updateLink != null) return false;
+        if (updateId != that.updateId) return false;
+        if (updateName != null ? !updateName.equals(that.updateName) : that.updateName != null) return false;
+        if (updateVol != null ? !updateVol.equals(that.updateVol) : that.updateVol != null) return false;
+        if (updateDate != null ? !updateDate.equals(that.updateDate) : that.updateDate != null) return false;
+        if (updateGroup != null ? !updateGroup.equals(that.updateGroup) : that.updateGroup != null) return false;
+        if (updateLink != null ? !updateLink.equals(that.updateLink) : that.updateLink != null) return false;
 
         return true;
     }
@@ -99,15 +99,5 @@ public class Update {
         result = 31 * result + (updateGroup != null ? updateGroup.hashCode() : 0);
         result = 31 * result + (updateLink != null ? updateLink.hashCode() : 0);
         return result;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "update_group", referencedColumnName = "group_id", insertable = false, updatable = false)
-    public Group getGroupByUpdateGroup() {
-        return groupByUpdateGroup;
-    }
-
-    public void setGroupByUpdateGroup(Group groupByUpdateGroup) {
-        this.groupByUpdateGroup = groupByUpdateGroup;
     }
 }

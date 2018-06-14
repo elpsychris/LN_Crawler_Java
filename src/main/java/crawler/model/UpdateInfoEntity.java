@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "Update_Info", schema = "dbo", catalog = "NU_DB")
-public class UpdateInfo {
+public class UpdateInfoEntity {
     private int updateInfoId;
     private Integer updateId;
     private Integer projectId;
@@ -44,7 +44,7 @@ public class UpdateInfo {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        UpdateInfo that = (UpdateInfo) o;
+        UpdateInfoEntity that = (UpdateInfoEntity) o;
 
         if (updateInfoId != that.updateInfoId) return false;
         if (updateId != null ? !updateId.equals(that.updateId) : that.updateId != null) return false;

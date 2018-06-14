@@ -1,10 +1,11 @@
 package crawler;
 
-import crawler.model.Project;
+import crawler.model.ProjectEntity;
+import crawler.repository.ProjectRepo;
 import crawler.spider.ProjectSpider;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
+import crawler.utils.HibernateUtils;
+
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +20,22 @@ public class Main {
 
         // creating transaction object
 //        Project project = session.get(Project.class, 3);
-        ProjectSpider spider = new ProjectSpider();
-        spider.setStartUrls("https://ln.hako.re/danh-sach?page=1");
+        HibernateUtils.initSessionFactory();
+        ProjectEntity project = new ProjectEntity();
+        project.setProjectAlterName("kakakakkaka");
+        project.setProjectHash("adafdsd");
+        project.setProjectName("asas");
+        project.setProjectOriginId(1);
+
+        ProjectRepo projectRepo = new ProjectRepo();
+
+        ProjectSpider spider = new ProjectSpider(projectRepo);
+        String regex = "<main class=\"sect-body listext-table widthfluid clear\">[\\S\\s]*</article>\\n</main>";
+        Pattern pattern = Pattern.compile(regex);
+
+
+        spider.setStartUrls("https://ln.hako.re/danh-sach?page=1", pattern);
+
+
     }
 }

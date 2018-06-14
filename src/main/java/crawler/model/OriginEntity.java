@@ -1,17 +1,12 @@
 package crawler.model;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
 import javax.persistence.*;
-import java.util.Collection;
 
 @Entity
-@JsonIdentityInfo(generator=ObjectIdGenerators.UUIDGenerator.class, property="@id")
-public class Origin {
+@Table(name = "Origin", schema = "dbo", catalog = "NU_DB")
+public class OriginEntity {
     private int originId;
     private String countryName;
-    private Collection<Project> projectsByOriginId;
 
     @Id
     @Column(name = "origin_id")
@@ -38,10 +33,10 @@ public class Origin {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Origin origin = (Origin) o;
+        OriginEntity that = (OriginEntity) o;
 
-        if (originId != origin.originId) return false;
-        if (countryName != null ? !countryName.equals(origin.countryName) : origin.countryName != null) return false;
+        if (originId != that.originId) return false;
+        if (countryName != null ? !countryName.equals(that.countryName) : that.countryName != null) return false;
 
         return true;
     }
@@ -51,14 +46,5 @@ public class Origin {
         int result = originId;
         result = 31 * result + (countryName != null ? countryName.hashCode() : 0);
         return result;
-    }
-
-    @OneToMany(mappedBy = "originByProjectOriginId")
-    public Collection<Project> getProjectsByOriginId() {
-        return projectsByOriginId;
-    }
-
-    public void setProjectsByOriginId(Collection<Project> projectsByOriginId) {
-        this.projectsByOriginId = projectsByOriginId;
     }
 }
