@@ -1,27 +1,73 @@
 package crawler.model;
 
-import javax.persistence.*;
-import java.sql.Date;
+import crawler.utils.SqlDateAdapter;
+import crawler.utils.ViewHakoAdapter;
 
+import javax.persistence.*;
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.sql.Date;
+import java.util.List;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "ProjectEntity", propOrder = {
+        "projectId",
+        "projectName",
+        "projectAlterName",
+        "projectOriginId",
+        "projectYear",
+        "projectAuthor",
+        "projectIllustrator",
+        "projectSynopsis",
+        "projectHash",
+        "projectTag",
+        "projectPublisher",
+        "projectView",
+        "projectPoint",
+        "projectGenre",
+        "projectLastUpdate",
+        "projectTotalUpdate"
+})
 @Entity
 @Table(name = "Project", schema = "dbo", catalog = "NU_DB")
 public class ProjectEntity {
+    @XmlElement(name = "id")
     private int projectId;
+    @XmlElement(required = true, name = "name")
     private String projectName;
+    @XmlElement(required = true, name = "alter-name")
     private String projectAlterName;
+    @XmlElement(name = "origin")
     private Integer projectOriginId;
+    @XmlElement(name = "year")
     private Integer projectYear;
+    @XmlElement(name = "author")
     private String projectAuthor;
+    @XmlElement(name = "illustrator")
     private String projectIllustrator;
+    @XmlElement(name = "synopsis")
     private String projectSynopsis;
+    @XmlElement(name = "hash")
     private String projectHash;
+    @XmlElement(name = "tag")
     private String projectTag;
+    @XmlElement(name = "publisher")
     private Integer projectPublisher;
+    @XmlJavaTypeAdapter(ViewHakoAdapter.class)
+    @XmlElement(name = "view")
     private Integer projectView;
+    @XmlElement(name = "point")
     private Integer projectPoint;
-    private String projectGenre;
+
+    @XmlElement(name = "genre")
+    @OneToMany(mappedBy = "project")
+    private List<GenreMapEntity> projectGenre;
+
+    @XmlJavaTypeAdapter(SqlDateAdapter.class)
     private Date projectLastUpdate;
+    @XmlElement(name = "updates")
     private Integer projectTotalUpdate;
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

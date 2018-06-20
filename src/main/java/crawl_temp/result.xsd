@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="projects" type="projectsType"/>
+  <xs:complexType name="volumeType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="volume-name"/>
+      <xs:element type="xs:string" name="volume-cover"/>
+      <xs:element type="chaptersType" name="chapters"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="chaptersType">
+    <xs:sequence>
+      <xs:element type="chapterType" name="chapter" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="chapterType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="chapter-name"/>
+      <xs:element type="xs:string" name="chapter-date"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tagsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="tag" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="projectType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="synopsis"/>
+      <xs:element type="alter-namesType" name="alter-names"/>
+      <xs:element type="xs:string" name="author"/>
+      <xs:element type="tagsType" name="tags"/>
+      <xs:element type="xs:string" name="view"/>
+      <xs:element type="volumesType" name="volumes"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="projectsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="next-page"/>
+      <xs:element type="projectType" name="project" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="alter-namesType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="alter-name" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="volumesType">
+    <xs:sequence>
+      <xs:element type="volumeType" name="volume" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

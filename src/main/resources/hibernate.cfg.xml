@@ -18,6 +18,8 @@
         <mapping class="crawler.model.ProjectEntity"/>
         <mapping class="crawler.model.UpdateEntity"/>
         <mapping class="crawler.model.UpdateInfoEntity"/>
+        <mapping class="crawler.model.GenreEntity"/>
+        <mapping class="crawler.model.GenreMapEntity"/>
 
 
         <!-- DB schema will be updated if needed -->
