@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
 public class HibernateUtils {
     private static SessionFactory sessionFactory = buildSessionFactory();
 
-    public static boolean initSessionFactory() {
+    private static boolean initSessionFactory() {
         Session session = sessionFactory.openSession();
 
         try {
@@ -39,6 +39,7 @@ public class HibernateUtils {
     }
 
     public static SessionFactory getSessionFactory() {
+        initSessionFactory();
         return sessionFactory;
     }
 }

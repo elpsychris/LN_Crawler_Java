@@ -1,9 +1,13 @@
 package crawler.spider;
 
 
+import crawler.model.ProjectEntity;
 import crawler.model.Projects;
+import crawler.model.UpdateEntity;
 import crawler.repository.ProjectRepo;
 import crawler.utils.*;
+import org.hibernate.SessionFactory;
+import org.xml.sax.SAXException;
 
 import javax.xml.bind.JAXBException;
 import javax.xml.transform.Source;
@@ -11,6 +15,7 @@ import javax.xml.transform.Source;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
 import java.io.*;
 
 public class Spider {
@@ -40,7 +45,7 @@ public class Spider {
     public void start(String configPath, String xslPath) throws IOException, TransformerException, InterruptedException, JAXBException {
         Runnable thread = () -> {
             try {
-                Thread.sleep(10000);
+                Thread.sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -49,7 +54,21 @@ public class Spider {
         Thread thread1 = new Thread(thread);
         thread1.start();
         this.result = this.crawl(configPath, xslPath);
-        Projects projects = JAXBUtils.<Projects>xmlToObject(this.result, Projects.class);
+
+        try {
+            Schema schema = JAXBUtils.getSchema("src/main/java/crawler/schema/project_page.xsd");
+            Projects projects = JAXBUtils.<Projects>xmlToObject(this.result, schema, Projects.class);
+            ProjectRepo projectRepo = new ProjectRepo();
+            for (ProjectEntity project : projects.getProjects()) {
+                project.setProjectHash(ComUtils.hashString(project.getProjectLink()));
+                if (!projectRepo.checkExist(project)) {
+                    projectRepo.add(project);
+                }
+            }
+
+        } catch (SAXException e) {
+            e.printStackTrace();
+        }
 
 //        handler.onParsed(this.result);
     }

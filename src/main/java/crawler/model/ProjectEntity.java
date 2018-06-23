@@ -7,26 +7,28 @@ import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.sql.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ProjectEntity", propOrder = {
         "projectId",
         "projectName",
         "projectAlterName",
-        "projectOriginId",
         "projectYear",
         "projectAuthor",
         "projectIllustrator",
         "projectSynopsis",
         "projectHash",
         "projectTag",
-        "projectPublisher",
         "projectView",
         "projectPoint",
-        "projectGenre",
+        "genres",
+        "updates",
         "projectLastUpdate",
-        "projectTotalUpdate"
+        "projectTotalUpdate",
+        "projectLink"
 })
 @Entity
 @Table(name = "Project", schema = "dbo", catalog = "NU_DB")
@@ -37,8 +39,6 @@ public class ProjectEntity {
     private String projectName;
     @XmlElement(required = true, name = "alter-name")
     private String projectAlterName;
-    @XmlElement(name = "origin")
-    private Integer projectOriginId;
     @XmlElement(name = "year")
     private Integer projectYear;
     @XmlElement(name = "author")
@@ -51,22 +51,27 @@ public class ProjectEntity {
     private String projectHash;
     @XmlElement(name = "tag")
     private String projectTag;
-    @XmlElement(name = "publisher")
-    private Integer projectPublisher;
     @XmlJavaTypeAdapter(ViewHakoAdapter.class)
     @XmlElement(name = "view")
     private Integer projectView;
     @XmlElement(name = "point")
     private Integer projectPoint;
 
+    @XmlElementWrapper(name = "genres")
     @XmlElement(name = "genre")
-    @OneToMany(mappedBy = "project")
-    private List<GenreMapEntity> projectGenre;
+    private Set<GenreEntity> genres = new HashSet<>();
+
+    @XmlElementWrapper(name = "updates")
+    @XmlElement(name = "update")
+    private List<UpdateEntity> updates;
 
     @XmlJavaTypeAdapter(SqlDateAdapter.class)
+    @XmlElement(name = "last_update")
     private Date projectLastUpdate;
     @XmlElement(name = "updates")
     private Integer projectTotalUpdate;
+    @XmlElement(name = "link")
+    private String projectLink;
 
 
     @Id
@@ -98,16 +103,6 @@ public class ProjectEntity {
 
     public void setProjectAlterName(String projectAlterName) {
         this.projectAlterName = projectAlterName;
-    }
-
-    @Basic
-    @Column(name = "project_origin_id")
-    public Integer getProjectOriginId() {
-        return projectOriginId;
-    }
-
-    public void setProjectOriginId(Integer projectOriginId) {
-        this.projectOriginId = projectOriginId;
     }
 
     @Basic
@@ -171,16 +166,6 @@ public class ProjectEntity {
     }
 
     @Basic
-    @Column(name = "project_publisher")
-    public Integer getProjectPublisher() {
-        return projectPublisher;
-    }
-
-    public void setProjectPublisher(Integer projectPublisher) {
-        this.projectPublisher = projectPublisher;
-    }
-
-    @Basic
     @Column(name = "project_view")
     public Integer getProjectView() {
         return projectView;
@@ -198,16 +183,6 @@ public class ProjectEntity {
 
     public void setProjectPoint(Integer projectPoint) {
         this.projectPoint = projectPoint;
-    }
-
-    @Basic
-    @Column(name = "project_genre")
-    public String getProjectGenre() {
-        return projectGenre;
-    }
-
-    public void setProjectGenre(String projectGenre) {
-        this.projectGenre = projectGenre;
     }
 
     @Basic
@@ -230,6 +205,44 @@ public class ProjectEntity {
         this.projectTotalUpdate = projectTotalUpdate;
     }
 
+    @ManyToMany(cascade = {CascadeType.ALL}, targetEntity = GenreEntity.class, fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "GenreMap",
+            joinColumns = {@JoinColumn(name = "project_id")},
+            inverseJoinColumns = {@JoinColumn(name = "genre_id")}
+    )
+    public Set<GenreEntity> getGenres() {
+        return genres;
+    }
+
+    public void setGenres(Set<GenreEntity> genres) {
+        this.genres = genres;
+    }
+
+    @ManyToMany(cascade = { CascadeType.ALL })
+    @JoinTable(
+            name = "Update_Info",
+            joinColumns = { @JoinColumn(name = "project_id")},
+            inverseJoinColumns = {@JoinColumn(name = "update_id")}
+    )
+    public List<UpdateEntity> getUpdates() {
+        return updates;
+    }
+
+    public void setUpdates(List<UpdateEntity> updates) {
+        this.updates = updates;
+    }
+
+    @Basic
+    @Column(name = "project_link")
+    public String getProjectLink() {
+        return projectLink;
+    }
+
+    public void setProjectLink(String projectLink) {
+        this.projectLink = projectLink;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -241,8 +254,6 @@ public class ProjectEntity {
         if (projectName != null ? !projectName.equals(that.projectName) : that.projectName != null) return false;
         if (projectAlterName != null ? !projectAlterName.equals(that.projectAlterName) : that.projectAlterName != null)
             return false;
-        if (projectOriginId != null ? !projectOriginId.equals(that.projectOriginId) : that.projectOriginId != null)
-            return false;
         if (projectYear != null ? !projectYear.equals(that.projectYear) : that.projectYear != null) return false;
         if (projectAuthor != null ? !projectAuthor.equals(that.projectAuthor) : that.projectAuthor != null)
             return false;
@@ -252,11 +263,8 @@ public class ProjectEntity {
             return false;
         if (projectHash != null ? !projectHash.equals(that.projectHash) : that.projectHash != null) return false;
         if (projectTag != null ? !projectTag.equals(that.projectTag) : that.projectTag != null) return false;
-        if (projectPublisher != null ? !projectPublisher.equals(that.projectPublisher) : that.projectPublisher != null)
-            return false;
         if (projectView != null ? !projectView.equals(that.projectView) : that.projectView != null) return false;
         if (projectPoint != null ? !projectPoint.equals(that.projectPoint) : that.projectPoint != null) return false;
-        if (projectGenre != null ? !projectGenre.equals(that.projectGenre) : that.projectGenre != null) return false;
         if (projectLastUpdate != null ? !projectLastUpdate.equals(that.projectLastUpdate) : that.projectLastUpdate != null)
             return false;
         if (projectTotalUpdate != null ? !projectTotalUpdate.equals(that.projectTotalUpdate) : that.projectTotalUpdate != null)
@@ -270,17 +278,14 @@ public class ProjectEntity {
         int result = projectId;
         result = 31 * result + (projectName != null ? projectName.hashCode() : 0);
         result = 31 * result + (projectAlterName != null ? projectAlterName.hashCode() : 0);
-        result = 31 * result + (projectOriginId != null ? projectOriginId.hashCode() : 0);
         result = 31 * result + (projectYear != null ? projectYear.hashCode() : 0);
         result = 31 * result + (projectAuthor != null ? projectAuthor.hashCode() : 0);
         result = 31 * result + (projectIllustrator != null ? projectIllustrator.hashCode() : 0);
         result = 31 * result + (projectSynopsis != null ? projectSynopsis.hashCode() : 0);
         result = 31 * result + (projectHash != null ? projectHash.hashCode() : 0);
         result = 31 * result + (projectTag != null ? projectTag.hashCode() : 0);
-        result = 31 * result + (projectPublisher != null ? projectPublisher.hashCode() : 0);
         result = 31 * result + (projectView != null ? projectView.hashCode() : 0);
         result = 31 * result + (projectPoint != null ? projectPoint.hashCode() : 0);
-        result = 31 * result + (projectGenre != null ? projectGenre.hashCode() : 0);
         result = 31 * result + (projectLastUpdate != null ? projectLastUpdate.hashCode() : 0);
         result = 31 * result + (projectTotalUpdate != null ? projectTotalUpdate.hashCode() : 0);
         return result;

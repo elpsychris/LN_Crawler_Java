@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://t3.com/2018/projects"
-            xmlns="http://t3.com/2018/projects"
+            targetNamespace="http://t3.com/2018/project-page"
+            xmlns="http://t3.com/2018/project-page"
             elementFormDefault="qualified">
-    <xsd:element name="project-page" type="project-page-type"/>
-    <xsd:complexType name="project-page-type">
-        <xsd:sequence>
-            <xsd:element name="next-page" type="xsd:string"/>
-            <xsd:element name="projects">
-                <xsd:complexType>
-                    <xsd:sequence>
-                        <xsd:element name="project" type="project-type" minOccurs="0" maxOccurs="unbounded"/>
-                    </xsd:sequence>
-                </xsd:complexType>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
+    <xsd:include schemaLocation="update.xsd"/>
+
     <xsd:complexType name="project-type">
         <xsd:sequence>
             <xsd:element name="name" type="xsd:string" minOccurs="1"/>
@@ -37,7 +26,14 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element name="volumes" type="xsd:anyType"/>
+            <xsd:element name="link" type="xsd:string"/>
+            <xsd:element name="updates">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="update" type="update" minOccurs="0" maxOccurs="unbounded"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
 </xsd:schema>

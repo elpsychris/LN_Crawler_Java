@@ -1,851 +1,889 @@
-<projects xmlns:t="http://t3.com/2018/xml">
+<project-page xmlns:t="http://t3.com/2018/xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://t3.com/2018/project-page"
+>
 <next-page>https://ln.hako.re/danh-sach?page=2</next-page>
+<projects>
 <project>
+<id>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated</id>
 <name>(Um, Sorry) I’ve Been Reincarnated!</name>
-<alter-names>
-<alter-name>Tensei shichatta yo</alter-name>
-<alter-name>「転生しちゃったよ（いや、ごめん）」</alter-name>
-<alter-name>(Ừm, Xin lỗi) Tôi vô tình đầu thai.</alter-name>
-</alter-names>
+<alter-name>Tensei shichatta yo, 「転生しちゃったよ（いや、ごめん）」, (Ừm, Xin lỗi) Tôi vô tình đầu thai., </alter-name>
 <author>ヘッドホン侍 (Heddohon samurai?)</author>
+<illustrator/>
 <synopsis>Vẫn là câu chuyện tái sinh ở thế giới khác. Lần này nguyên nhân là cứu bạn và chấn thương sọ não vì cái bình hoa của thượng đế. Được chọn giữa biến mất và tái sinh, câu trả lời là tái sinh và yêu cầu duy nhất là được giữ lại kí ức. Dù sau đó vẫn được thượng đế buff nhiệt tình.  Tái sinh ở thế giới khác? - tất nhiên là có phép thuật rồi - và ở đó khi phát hiện ra vòng tròn ma pháp thực ra lại là các kí tự [Kanji] . Anh main nhà ta LIỆU CÓ xây dựng 1 harem từ bé và mang bộ mặt cực kì khả ái khi được những người phụ n... mà như thế là đủ rồi.</synopsis>
-<tags>
-<tag>Adventure</tag>
-<tag>Fantasy</tag>
-<tag>School Life</tag>
-<tag>Shounen</tag>
-</tags>
-<view>22,021</view>
-<volumes>
-<volume>
+<genres>
+<genre>Adventure</genre>
+<genre>Fantasy</genre>
+<genre>School Life</genre>
+<genre>Shounen</genre>
+</genres>
+<view>22,148</view>
+<link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated</link>
+<updates>
+<update>
 <volume-name>Arc 1: Tuổi Thơ sung túc</volume-name>
 <volume-cover>https://3.bp.blogspot.com/-lWxpE-NNnr8/WO29GtfaHAI/AAAAAAAAMO0/eeSTXy_msbg/w220/book_2087.jpg</volume-cover>
-<chapters>
-<chapter>
 <chapter-name>Giới thiệu nhân vật</chapter-name>
 <chapter-date>12/04/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>JakKupi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/57-jakkupi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated/c15051-gioi-thieu-nhan-vat</update-link>
+</update>
+<update>
+<volume-name>Arc 1: Tuổi Thơ sung túc</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-lWxpE-NNnr8/WO29GtfaHAI/AAAAAAAAMO0/eeSTXy_msbg/w220/book_2087.jpg</volume-cover>
 <chapter-name>Chương 01 - Mở đầu</chapter-name>
 <chapter-date>03/03/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>JakKupi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/57-jakkupi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated/c15052-chuong-01-mo-dau</update-link>
+</update>
+<update>
+<volume-name>Arc 1: Tuổi Thơ sung túc</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-lWxpE-NNnr8/WO29GtfaHAI/AAAAAAAAMO0/eeSTXy_msbg/w220/book_2087.jpg</volume-cover>
 <chapter-name>Chương 02 - Cánh đồng hoa</chapter-name>
 <chapter-date>01/03/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>JakKupi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/57-jakkupi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated/c15053-chuong-02-canh-dong-hoa</update-link>
+</update>
+<update>
+<volume-name>Arc 1: Tuổi Thơ sung túc</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-lWxpE-NNnr8/WO29GtfaHAI/AAAAAAAAMO0/eeSTXy_msbg/w220/book_2087.jpg</volume-cover>
 <chapter-name>Chương 03 - Hối tiếc một chút, nhưng cảm ơn!</chapter-name>
 <chapter-date>10/03/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>JakKupi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/57-jakkupi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated/c15054-chuong-03-hoi-tiec-mot-chut-nhung-cam-on</update-link>
+</update>
+<update>
+<volume-name>Arc 1: Tuổi Thơ sung túc</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-lWxpE-NNnr8/WO29GtfaHAI/AAAAAAAAMO0/eeSTXy_msbg/w220/book_2087.jpg</volume-cover>
 <chapter-name>Chương 04 - Rào cản đầu tiên</chapter-name>
 <chapter-date>10/03/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>JakKupi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/57-jakkupi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated/c15073-chuong-04</update-link>
+</update>
+<update>
+<volume-name>Arc 1: Tuổi Thơ sung túc</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-lWxpE-NNnr8/WO29GtfaHAI/AAAAAAAAMO0/eeSTXy_msbg/w220/book_2087.jpg</volume-cover>
 <chapter-name>Chương 05 - Tôi trở lại</chapter-name>
 <chapter-date>04/03/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>JakKupi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/57-jakkupi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated/c15086-chuong-05-toi-tro-lai</update-link>
+</update>
+<update>
+<volume-name>Arc 1: Tuổi Thơ sung túc</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-lWxpE-NNnr8/WO29GtfaHAI/AAAAAAAAMO0/eeSTXy_msbg/w220/book_2087.jpg</volume-cover>
 <chapter-name>Chương 06 - Làm mẹ, Sinh con</chapter-name>
 <chapter-date>04/03/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>JakKupi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/57-jakkupi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated/c15132-chuong-06-lam-me-sinh-con</update-link>
+</update>
+<update>
+<volume-name>Arc 1: Tuổi Thơ sung túc</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-lWxpE-NNnr8/WO29GtfaHAI/AAAAAAAAMO0/eeSTXy_msbg/w220/book_2087.jpg</volume-cover>
 <chapter-name>Chương 07 - Lần đầu cho con bú</chapter-name>
 <chapter-date>04/03/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>JakKupi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/57-jakkupi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated/c15149-chuong-07-lan-dau-cho-con-bu</update-link>
+</update>
+<update>
+<volume-name>Arc 1: Tuổi Thơ sung túc</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-lWxpE-NNnr8/WO29GtfaHAI/AAAAAAAAMO0/eeSTXy_msbg/w220/book_2087.jpg</volume-cover>
 <chapter-name>Chương 08 - Tôi sẽ cố gắng hết sức</chapter-name>
 <chapter-date>10/03/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>JakKupi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/57-jakkupi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated/c15328-chuong-08-toi-se-co-gang-het-suc</update-link>
+</update>
+<update>
+<volume-name>Arc 1: Tuổi Thơ sung túc</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-lWxpE-NNnr8/WO29GtfaHAI/AAAAAAAAMO0/eeSTXy_msbg/w220/book_2087.jpg</volume-cover>
 <chapter-name>Chương 09 - Nếu bạn muốn học cách đọc, hãy tìm một cuốn sách ảnh!</chapter-name>
 <chapter-date>12/04/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>JakKupi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/57-jakkupi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated/c15366-chuong-09-neu-ban-muon-hoc-cach-doc-hay-tim-mot-cuon-sach-anh</update-link>
+</update>
+<update>
+<volume-name>Arc 1: Tuổi Thơ sung túc</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-lWxpE-NNnr8/WO29GtfaHAI/AAAAAAAAMO0/eeSTXy_msbg/w220/book_2087.jpg</volume-cover>
 <chapter-name>Chương 10 - Tôi dần hiểu những điều khác nhau.</chapter-name>
 <chapter-date>19/03/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>JakKupi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/57-jakkupi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated/c15545-chuong-10-toi-dan-hieu-nhung-dieu-khac-nhau</update-link>
+</update>
+<update>
+<volume-name>Arc 1: Tuổi Thơ sung túc</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-lWxpE-NNnr8/WO29GtfaHAI/AAAAAAAAMO0/eeSTXy_msbg/w220/book_2087.jpg</volume-cover>
 <chapter-name>Chương 11 - Có vẻ Cha thật sự tuyệt vời</chapter-name>
 <chapter-date>26/03/2017</chapter-date>
-</chapter>
-</chapters>
-</volume>
-</volumes>
+<update-group>
+<group-name>JakKupi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/57-jakkupi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/468-um-sorry-ive-been-reincarnated/c15724-chuong-11-co-ve-cha-that-su-tuyet-voi</update-link>
+</update>
+</updates>
 </project>
 <project>
+<id>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta</id>
+<name>10 nen goshi no HikiNiito o Yamete Gaishutsushitara Jitaku goto Isekai ni Ten’ishiteta</name>
+<alter-name>When I was going out from my house to stop become a Hiki-NEET after 10 years I was transported to another world, 10年ごしの引きニートを辞めて外出したら自宅ごと異世界に転移してた, Khi tôi rời khỏi nhà để ngưng trở thành một tên Hiki-NEET sau 10 năm, tôi đã bị dịch chuyển sang thế giới khác, </alter-name>
+<author>Bandou Tarou</author>
+<illustrator>Benio</illustrator>
+<synopsis>Houjou Yuuji, 30 tuổi, thất nghiệp, là một hikiomori trong suốt 10 năm, quyết định đi ra khỏi nhà.Tuy nhiên, bên ngoài đó là một thế giới khác cùng với những sinh vật kì lạ mà cậu chưa từng biết đến. Bằng một cách nào đó, điện, nước và internet trong ngôi nhà vẫn sử dụng được. Cùng với cô chó Kotarou, cậu quyết định sống luôn ở đây.Một ngày, khi đang khám phá khu rừng gần nhà, anh tìm thấy một cô gái tên Alice và trở thành người trông nom cho cô.</synopsis>
+<genres>
+<genre>Adventure</genre>
+<genre>Fantasy</genre>
+<genre>Action</genre>
+<genre>Slice of Life</genre>
+<genre>Romance</genre>
+<genre>Web Novel</genre>
+</genres>
+<view>57,309</view>
+<link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta</link>
+<updates>
+<update>
+<volume-name>Chương 01: Yuuji từ &amp;quot;hiki-NEET&amp;quot; tiến hóa thành &amp;quot;NEET cô đơn&amp;quot;</volume-name>
+<volume-cover>https://4.bp.blogspot.com/-8OyGbae0TdQ/WQ2qHp-Hz_I/AAAAAAAAQGs/ICjDJFNl09AVaoHD1MZOC1erNHEtxHZLQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Mở đầu</chapter-name>
+<chapter-date>05/06/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17764-mo-dau</update-link>
+</update>
+<update>
+<volume-name>Chương 01: Yuuji từ &amp;quot;hiki-NEET&amp;quot; tiến hóa thành &amp;quot;NEET cô đơn&amp;quot;</volume-name>
+<volume-cover>https://4.bp.blogspot.com/-8OyGbae0TdQ/WQ2qHp-Hz_I/AAAAAAAAQGs/ICjDJFNl09AVaoHD1MZOC1erNHEtxHZLQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 01: Yuuji, cố gắng ra khỏi nhà</chapter-name>
+<chapter-date>05/06/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17732-chuong-01-yuuji-tu-hiki-neet-tien-hoa-thanh-neet-co-don</update-link>
+</update>
+<update>
+<volume-name>Chương 01: Yuuji từ &amp;quot;hiki-NEET&amp;quot; tiến hóa thành &amp;quot;NEET cô đơn&amp;quot;</volume-name>
+<volume-cover>https://4.bp.blogspot.com/-8OyGbae0TdQ/WQ2qHp-Hz_I/AAAAAAAAQGs/ICjDJFNl09AVaoHD1MZOC1erNHEtxHZLQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 02: Yuuji, từ bỏ việc ra khỏi nhà</chapter-name>
+<chapter-date>09/06/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17733-phan-02-yuuji-tu-bo-viec-ra-khoi-nha</update-link>
+</update>
+<update>
+<volume-name>Chương 01: Yuuji từ &amp;quot;hiki-NEET&amp;quot; tiến hóa thành &amp;quot;NEET cô đơn&amp;quot;</volume-name>
+<volume-cover>https://4.bp.blogspot.com/-8OyGbae0TdQ/WQ2qHp-Hz_I/AAAAAAAAQGs/ICjDJFNl09AVaoHD1MZOC1erNHEtxHZLQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 03: Yuuji, kiểm tra điện nước</chapter-name>
+<chapter-date>07/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17756-phan-03-yuuji-kiem-tra-dien-nuoc</update-link>
+</update>
+<update>
+<volume-name>Chương 01: Yuuji từ &amp;quot;hiki-NEET&amp;quot; tiến hóa thành &amp;quot;NEET cô đơn&amp;quot;</volume-name>
+<volume-cover>https://4.bp.blogspot.com/-8OyGbae0TdQ/WQ2qHp-Hz_I/AAAAAAAAQGs/ICjDJFNl09AVaoHD1MZOC1erNHEtxHZLQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 04: Diễn Đàn Yuuji, đăng ảnh ở thế giới khác</chapter-name>
+<chapter-date>07/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17792-phan-04</update-link>
+</update>
+<update>
+<volume-name>Chương 01: Yuuji từ &amp;quot;hiki-NEET&amp;quot; tiến hóa thành &amp;quot;NEET cô đơn&amp;quot;</volume-name>
+<volume-cover>https://4.bp.blogspot.com/-8OyGbae0TdQ/WQ2qHp-Hz_I/AAAAAAAAQGs/ICjDJFNl09AVaoHD1MZOC1erNHEtxHZLQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 05: Yuuji, cố gắng bảo kê lương thực</chapter-name>
+<chapter-date>07/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17805-phan-05-yuuji-co-gang-bao-ke-luong-thuc</update-link>
+</update>
+<update>
+<volume-name>Chương 01: Yuuji từ &amp;quot;hiki-NEET&amp;quot; tiến hóa thành &amp;quot;NEET cô đơn&amp;quot;</volume-name>
+<volume-cover>https://4.bp.blogspot.com/-8OyGbae0TdQ/WQ2qHp-Hz_I/AAAAAAAAQGs/ICjDJFNl09AVaoHD1MZOC1erNHEtxHZLQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 06: Diễn Đàn Yuuji, kiểm tra độ an toàn của thức ăn</chapter-name>
+<chapter-date>07/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17855-phan-06-bang-thong-bao-cua-yuuji-xem-co-an-duoc-khong</update-link>
+</update>
+<update>
+<volume-name>Chương 01: Yuuji từ &amp;quot;hiki-NEET&amp;quot; tiến hóa thành &amp;quot;NEET cô đơn&amp;quot;</volume-name>
+<volume-cover>https://4.bp.blogspot.com/-8OyGbae0TdQ/WQ2qHp-Hz_I/AAAAAAAAQGs/ICjDJFNl09AVaoHD1MZOC1erNHEtxHZLQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 07: Yuuji, và cuộc đụng độ với sinh vật lạ</chapter-name>
+<chapter-date>07/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17895-phan-07-yuuji-va-cuoc-dung-do-voi-sinh-vat-la</update-link>
+</update>
+<update>
+<volume-name>Chương 01: Yuuji từ &amp;quot;hiki-NEET&amp;quot; tiến hóa thành &amp;quot;NEET cô đơn&amp;quot;</volume-name>
+<volume-cover>https://4.bp.blogspot.com/-8OyGbae0TdQ/WQ2qHp-Hz_I/AAAAAAAAQGs/ICjDJFNl09AVaoHD1MZOC1erNHEtxHZLQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 08: Yuuji, hoàn toàn không quan tâm đến tình huống nguy hiểm</chapter-name>
+<chapter-date>07/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17902-phan-08-yuuji-hoan-toan-khong-quan-tam-den-tinh-huong-nguy-hiem</update-link>
+</update>
+<update>
+<volume-name>Chương 01: Yuuji từ &amp;quot;hiki-NEET&amp;quot; tiến hóa thành &amp;quot;NEET cô đơn&amp;quot;</volume-name>
+<volume-cover>https://4.bp.blogspot.com/-8OyGbae0TdQ/WQ2qHp-Hz_I/AAAAAAAAQGs/ICjDJFNl09AVaoHD1MZOC1erNHEtxHZLQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 09: Yuuji, tiêu diệt goblin</chapter-name>
+<chapter-date>07/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17926-phan-09-yuuji-tieu-diet-goblin</update-link>
+</update>
+<update>
+<volume-name>Chương 01: Yuuji từ &amp;quot;hiki-NEET&amp;quot; tiến hóa thành &amp;quot;NEET cô đơn&amp;quot;</volume-name>
+<volume-cover>https://4.bp.blogspot.com/-8OyGbae0TdQ/WQ2qHp-Hz_I/AAAAAAAAQGs/ICjDJFNl09AVaoHD1MZOC1erNHEtxHZLQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần kết</chapter-name>
+<chapter-date>07/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17927-phan-ket</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 01: Yuuji, chạm trán lũ goblin và xóa sổ chúng</chapter-name>
+<chapter-date>07/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17986-phan-01-yuuji-cham-tran-lu-goblin-va-xoa-so-chung</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 02: Yuuji, hình như đã lên level</chapter-name>
+<chapter-date>07/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c17988-phan-02-yuuji-duong-nhu-la-len-cap</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 03: Yuuji, lần đầu gặp người ở thế giới khác</chapter-name>
+<chapter-date>07/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c18018-phan-03-yuuji-lan-dau-gap-nguoi-o-the-gioi-khac</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 04: Yuuji, chăm sóc cô bé đến từ thế giới khác</chapter-name>
+<chapter-date>07/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c18020-phan-04-cham-soc-co-be-den-tu-the-gioi-khac</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 05: Yuuji, hiểu được tình hình của cô bé</chapter-name>
+<chapter-date>08/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c18023-chuong-05-yuuji-hieu-duoc-tinh-hinh-cua-co-be</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 06: Diễn Đàn Yuuji, đăng ảnh của Alice lên diễn đàn</chapter-name>
+<chapter-date>08/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c18045-phan-06-bang-thong-bao-cua-yuuji-dang-anh-cua-alice-len-bang-thong-bao</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 07: Yuuji, sống cuộc sống hằng ngày cùng Alice</chapter-name>
+<chapter-date>08/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c18106-chuong-07</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 08: Yuuji nhận Alice làm em gái nuôi</chapter-name>
+<chapter-date>08/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c18269-phan-08-yuuji-nhan-alice-lam-em-gai-nuoi</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 09: Yuuji lần đầu tiên trong đời thấy ma thuật</chapter-name>
+<chapter-date>08/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c18365-phan-09-yuuji-lan-dau-tien-trong-doi-thay-ma-thuat</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 10: Diễn Đàn Yuuji, báo cáo về tình thế giới khác qua video về phép thuật.</chapter-name>
+<chapter-date>08/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c18675-phan-10-bang-thong-bao-cua-yuuji-bao-cao-ve-tinh-the-gioi-khac-qua-video-ve-phep-thuat</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 11: Yuuji, "Bọ Tuyết" - bằng chứng cho thấy Mùa Đông đang đến</chapter-name>
+<chapter-date>08/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c19369-phan-11-yuuji-bo-tuyet-bang-chung-cho-thay-mua-dong-dang-den</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 12: Yuuji, cân cả heo rừng</chapter-name>
+<chapter-date>12/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c19449-phan-12-yuuji-can-ca-heo-rung</update-link>
+</update>
+<update>
+<volume-name>Chương 02: Yuuji từ &amp;quot;NEET cô đơn&amp;quot; tiến hóa thành &amp;quot;NEET&amp;quot;</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-eT0r5zvUKyo/WT1NG7-QTVI/AAAAAAAAY5o/ouFbHkhbwyknKVBqYTSVGqXe9qcB-SIvQCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần Kết</chapter-name>
+<chapter-date>09/06/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c19525-phan-cuoi</update-link>
+</update>
+<update>
+<volume-name>Chương 03: Dù là một NEET, có vẻ Yuuji là một Người Giàu Có ở Nhật Bản</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-1b4oDUKwlks/WT1Rdf0ZRpI/AAAAAAAAY50/66aTfAUGjaIADDS0FjpIwMErvaWwlKz7QCHM/w220/default.jpg</volume-cover>
+<chapter-name>Mở đầu</chapter-name>
+<chapter-date>15/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c19648-mo-dau</update-link>
+</update>
+<update>
+<volume-name>Chương 03: Dù là một NEET, có vẻ Yuuji là một Người Giàu Có ở Nhật Bản</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-1b4oDUKwlks/WT1Rdf0ZRpI/AAAAAAAAY50/66aTfAUGjaIADDS0FjpIwMErvaWwlKz7QCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 01: Em gái Yuuji, Sakura, kiểm tra lại ngôi nhà</chapter-name>
+<chapter-date>16/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c19664-phan-01-em-gai-yuuji-sakura-kiem-tra-lai-ngoi-nha</update-link>
+</update>
+<update>
+<volume-name>Chương 03: Dù là một NEET, có vẻ Yuuji là một Người Giàu Có ở Nhật Bản</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-1b4oDUKwlks/WT1Rdf0ZRpI/AAAAAAAAY50/66aTfAUGjaIADDS0FjpIwMErvaWwlKz7QCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 02: Em gái Yuuji, Sakura, Liên lạc với Yuuji trên Diễn Đàn</chapter-name>
+<chapter-date>23/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c19720-phan-2-em-gai-yuuji-sakura-lien-lac-voi-yuuji-tren-dien-dan</update-link>
+</update>
+<update>
+<volume-name>Chương 03: Dù là một NEET, có vẻ Yuuji là một Người Giàu Có ở Nhật Bản</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-1b4oDUKwlks/WT1Rdf0ZRpI/AAAAAAAAY50/66aTfAUGjaIADDS0FjpIwMErvaWwlKz7QCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 03: Yuuji, chụp ảnh gửi cho em gái cậu, Sakura</chapter-name>
+<chapter-date>18/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c19721-phan-3-yuuji-chup-anh-gui-cho-em-gai-cau-sakura</update-link>
+</update>
+<update>
+<volume-name>Chương 03: Dù là một NEET, có vẻ Yuuji là một Người Giàu Có ở Nhật Bản</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-1b4oDUKwlks/WT1Rdf0ZRpI/AAAAAAAAY50/66aTfAUGjaIADDS0FjpIwMErvaWwlKz7QCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 04: Em gái Yuuji, Sakura, về tình huống ở Tokyo</chapter-name>
+<chapter-date>20/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c19820-phan-04-em-gai-yuuji-sakura-ve-tinh-huong-o-tokyo</update-link>
+</update>
+<update>
+<volume-name>Chương 03: Dù là một NEET, có vẻ Yuuji là một Người Giàu Có ở Nhật Bản</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-1b4oDUKwlks/WT1Rdf0ZRpI/AAAAAAAAY50/66aTfAUGjaIADDS0FjpIwMErvaWwlKz7QCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 05: Yuuji, Gửi email cho em gái, Sakura</chapter-name>
+<chapter-date>21/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c19860-phan-05-yuuji-gui-email-cho-em-gai-sakura</update-link>
+</update>
+<update>
+<volume-name>Chương 03: Dù là một NEET, có vẻ Yuuji là một Người Giàu Có ở Nhật Bản</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-1b4oDUKwlks/WT1Rdf0ZRpI/AAAAAAAAY50/66aTfAUGjaIADDS0FjpIwMErvaWwlKz7QCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 06: Em gái Yuuji, Sakura, phản hồi mail của Yuuji</chapter-name>
+<chapter-date>22/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c19901-phan-06-em-gai-yuuji-sakura-phan-hoi-mail-cua-yuuji</update-link>
+</update>
+<update>
+<volume-name>Chương 03: Dù là một NEET, có vẻ Yuuji là một Người Giàu Có ở Nhật Bản</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-1b4oDUKwlks/WT1Rdf0ZRpI/AAAAAAAAY50/66aTfAUGjaIADDS0FjpIwMErvaWwlKz7QCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần 07: Diễn đàn Yuuji, cảm thấy có dũng khí khi kiểm tra tài khoản ngân hàng</chapter-name>
+<chapter-date>24/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c19968-phan-07-dien-dan-yuuji-cam-thay-co-dung-khi-khi-kiem-tra-tai-khoan-ngan-hang</update-link>
+</update>
+<update>
+<volume-name>Chương 03: Dù là một NEET, có vẻ Yuuji là một Người Giàu Có ở Nhật Bản</volume-name>
+<volume-cover>https://3.bp.blogspot.com/-1b4oDUKwlks/WT1Rdf0ZRpI/AAAAAAAAY50/66aTfAUGjaIADDS0FjpIwMErvaWwlKz7QCHM/w220/default.jpg</volume-cover>
+<chapter-name>Phần kết</chapter-name>
+<chapter-date>28/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c20125-phan-ket</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Mở đầu</chapter-name>
+<chapter-date>28/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c20126-mo-dau</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Phần 01: Yuuji, gặp gỡ người ở thế giới khác, hơn nữa họ còn là Nhà Thám Hiểm</chapter-name>
+<chapter-date>28/06/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c20127-phan-01-yuuji-gap-go-nguoi-o-the-gioi-khac-hon-nua-ho-con-la-nha-tham-hiem</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Phần 02: Yuuji, cuộc nói chuyện với Nhà Thám Hiểm Joss</chapter-name>
+<chapter-date>03/07/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c20406-phan-02-yuuji-cuoc-noi-chuyen-voi-nha-tham-hiem-joss</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Phần 03: Yuuji, yêu cầu những Nhà Thám Hiểm</chapter-name>
+<chapter-date>04/07/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c20407-phan-3-yuuji-yeu-cau-nhung-nha-tham-hiem</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Phần 04: Diễn đàn Yuuji, Báo cáo về việc đụng độ nhóm Nhà Thám Hiểm và nhận lời khuyên</chapter-name>
+<chapter-date>12/07/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c20789-phan-04-dien-dan-yuuji-bao-cao-ve-viec-dung-do-nhom-nha-tham-hiem-va-nhan-loi-khuyen</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Phần 05: Yuuji, luyện tập phép thuật trong vườn khi mà triệu chứng của Chuunibyou xuất hiện</chapter-name>
+<chapter-date>12/07/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c20790-phan-05-yuuji-luyen-tap-phep-thuat-trong-vuon-khi-ma-trieu-chung-cua-chuunibyou-xuat-hien</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Phần 06: Yuuji, Alice và Kotarou ngắm hoa</chapter-name>
+<chapter-date>12/07/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c20791-phan-06-yuuji-alice-va-kotarou-ngam-hoa</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Phần 07: Yuuji, lần đầu nói chuyện với người Bán Rong</chapter-name>
+<chapter-date>12/07/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c20792-phan-07-yuuji-lan-dau-noi-chuyen-voi-nguoi-ban-rong</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Phần 08: Yuuji, đề nghị Tay Bán Buôn</chapter-name>
+<chapter-date>28/07/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c21704-phan-08-yuuji-de-nghi-tay-ban-buon</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Phần 09: Yuuji, đàm phán với người Bán Rong để biết thêm thông tin về Người Du Hành thế giới</chapter-name>
+<chapter-date>28/07/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c21705-phan-09-yuuji-dam-phan-voi-nguoi-ban-rong-de-biet-them-thong-tin-ve-nguoi-du-hanh-the-gioi</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Phần 10: Yuuji, nghe một câu chuyện từ Người Bán Rong</chapter-name>
+<chapter-date>11/08/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c22618-phan-10-yuuji-nghe-mot-cau-chuyen-tu-nguoi-ban-rong</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Phần 11: Yuuji, bắt đầu khai khẩn ruộng đất một cách bình yên với Alice</chapter-name>
+<chapter-date>11/08/2017</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c22619-phan-11-yuuji-bat-dau-khai-khan-ruong-dat-mot-cach-binh-yen-voi-alice</update-link>
+</update>
+<update>
+<volume-name>Chương 04: Yuuji đổi nghề từ &amp;quot;Đại Gia&amp;quot; thành &amp;quot;Pháp Sư Khu Rừng&amp;quot;</volume-name>
+<volume-cover>https://2.bp.blogspot.com/-uEJHNUdyvcI/WVEoBYlQAmI/AAAAAAAAcPw/NVdWIl4BHzEmxpsmmw1yfQrTNF_e0hncwCHMYCw/w220/default.jpg</volume-cover>
+<chapter-name>Phần kết</chapter-name>
+<chapter-date>22/01/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c27858-phan-ket</update-link>
+</update>
+<update>
+<volume-name>Giao Đoạn 1</volume-name>
+<volume-cover>img/nocover.png</volume-cover>
+<chapter-name>Chương 02, Phần 13</chapter-name>
+<chapter-date>11/01/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c27497-chuong-02-phan-13</update-link>
+</update>
+<update>
+<volume-name>Giao Đoạn 1</volume-name>
+<volume-cover>img/nocover.png</volume-cover>
+<chapter-name>Chương 03, Phần 08</chapter-name>
+<chapter-date>15/01/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c27669-chuong-03-phan-08</update-link>
+</update>
+<update>
+<volume-name>Giao Đoạn 1</volume-name>
+<volume-cover>img/nocover.png</volume-cover>
+<chapter-name>Chương 03, Phần 09</chapter-name>
+<chapter-date>22/01/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c27857-chuong-03-phan-09</update-link>
+</update>
+<update>
+<volume-name>Giao Đoạn 1</volume-name>
+<volume-cover>img/nocover.png</volume-cover>
+<chapter-name>Diễn Đàn, Xác Nhận Chủ Đề Này Nọ Buổi Offline Đầu Tiên</chapter-name>
+<chapter-date>12/02/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c28472-dien-dan-xac-nhan-chu-de-nay-no-buoi-offline-dau-tien</update-link>
+</update>
+<update>
+<volume-name>Chương 05 : Yuuji đổi nghề từ &amp;quot;Pháp sư rừng xanh&amp;quot; sang &amp;quot;Người tiên phong&amp;quot;</volume-name>
+<volume-cover>img/nocover.png</volume-cover>
+<chapter-name>Mở đầu</chapter-name>
+<chapter-date>22/01/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c27859-mo-dau</update-link>
+</update>
+<update>
+<volume-name>Chương 05 : Yuuji đổi nghề từ &amp;quot;Pháp sư rừng xanh&amp;quot; sang &amp;quot;Người tiên phong&amp;quot;</volume-name>
+<volume-cover>img/nocover.png</volume-cover>
+<chapter-name>Phần 1: Yuuji, Dành Mỗi Ngày Để Dọn Khu Đất Và Luyện Tập</chapter-name>
+<chapter-date>04/03/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c29028-phan-1-yuuji-danh-moi-ngay-de-don-khu-dat-va-luyen-tap</update-link>
+</update>
+<update>
+<volume-name>Chương 05 : Yuuji đổi nghề từ &amp;quot;Pháp sư rừng xanh&amp;quot; sang &amp;quot;Người tiên phong&amp;quot;</volume-name>
+<volume-cover>img/nocover.png</volume-cover>
+<chapter-name>Phần 2: Yuuji, Trận Quyết Chiến với Gốc Cây</chapter-name>
+<chapter-date>02/04/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c30351-phan-2-yuuji-tran-quyet-chien-voi-goc-cay</update-link>
+</update>
+<update>
+<volume-name>Chương 05 : Yuuji đổi nghề từ &amp;quot;Pháp sư rừng xanh&amp;quot; sang &amp;quot;Người tiên phong&amp;quot;</volume-name>
+<volume-cover>img/nocover.png</volume-cover>
+<chapter-name>Phần 3: Yuuji, Tiếp Đón Tay Bán Rong Kevin</chapter-name>
+<chapter-date>08/04/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c30591-phan-3-yuuji-tiep-don-tay-ban-rong-kevin</update-link>
+</update>
+<update>
+<volume-name>Chương 05 : Yuuji đổi nghề từ &amp;quot;Pháp sư rừng xanh&amp;quot; sang &amp;quot;Người tiên phong&amp;quot;</volume-name>
+<volume-cover>img/nocover.png</volume-cover>
+<chapter-name>Phần 4: Yuuji, Nhận hàng từ Người Bán Rong</chapter-name>
+<chapter-date>09/06/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c32829-phan-4-yuuji-nhan-hang-tu-nguoi-ban-rong</update-link>
+</update>
+<update>
+<volume-name>Chương 05 : Yuuji đổi nghề từ &amp;quot;Pháp sư rừng xanh&amp;quot; sang &amp;quot;Người tiên phong&amp;quot;</volume-name>
+<volume-cover>img/nocover.png</volume-cover>
+<chapter-name>Phần 5. Yuuji, Nghe Người Bán Buôn Giải Thích về Tiền Tệ</chapter-name>
+<chapter-date>09/06/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c32830-phan-5-yuuji-nghe-nguoi-ban-buon-giai-thich-ve-tien-te</update-link>
+</update>
+<update>
+<volume-name>Chương 05 : Yuuji đổi nghề từ &amp;quot;Pháp sư rừng xanh&amp;quot; sang &amp;quot;Người tiên phong&amp;quot;</volume-name>
+<volume-cover>img/nocover.png</volume-cover>
+<chapter-name>Phần 6. Yuuji, Lắng Nghe Lời Đề Nghị về Kiến Thức từ Người Bán Rong Kevin</chapter-name>
+<chapter-date>09/06/2018</chapter-date>
+<update-group>
+<group-name>DWR</group-name>
+<group-link>https://ln.hako.re/nhom-dich/100-doge</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/759-10-nen-goshi-no-hikiniito-o-yamete-gaishutsushitara-jitaku-goto-isekai-ni-tenishiteta/c32831-phan-6-yuuji-lang-nghe-loi-de-nghi-ve-kien-thuc-tu-nguoi-ban-rong-kevin</update-link>
+</update>
+</updates>
+</project>
+<project>
+<id>https://ln.hako.re/truyen/890-10-sai-no-saikyou-madoushi</id>
 <name>10 sai no Saikyou Madoushi</name>
-<alter-names>
-<alter-name>The strongest ten year old magician</alter-name>
-</alter-names>
+<alter-name>The strongest ten year old magician, </alter-name>
 <author>Amano Seiju</author>
+<illustrator>Fukahire</illustrator>
 <synopsis>Pháp sư mạnh nhất không biết mình là “người mạnh nhất” đã xuất hiện! Cô bé Ferris 10 tuổi là nô lệ làm việc ở khu mỏ khai thác ma thạch.Tuy nhiên, khi bé được phát hiện đang mang trong mình tài năng khủng khiếp về kháng ma thuật, bé buộc phải đi học.Được những con người tốt bụng quan tâm, tài năng của Ferris đã phát triển với tốc độ chóng mặt.Và rồi các thế lực trong bóng tối đã rục rịch để có được sức mạnh đó. Chỉ có Ferris không biết bản thân mình là một pháp sư tuyệt vời như thế nào.Như mọi ngày, miễn là Ferris được ăn cơm no bụng là đủ mãn nguyện rồi!</synopsis>
-<tags>
-<tag>Action</tag>
-<tag>Fantasy</tag>
-<tag>School Life</tag>
-<tag>Shoujo</tag>
-<tag>Super Power</tag>
-<tag>Web Novel</tag>
-</tags>
-<view>12,744</view>
-<volumes>
-<volume>
+<genres>
+<genre>Action</genre>
+<genre>Fantasy</genre>
+<genre>School Life</genre>
+<genre>Shoujo</genre>
+<genre>Super Power</genre>
+<genre>Web Novel</genre>
+</genres>
+<view>12,870</view>
+<link>https://ln.hako.re/truyen/890-10-sai-no-saikyou-madoushi</link>
+<updates>
+<update>
 <volume-name>WN</volume-name>
 <volume-cover>https://1.bp.blogspot.com/-cMT9P9SCKCw/WS2n5BjS_yI/AAAAAAAAU64/QhEjOM48X8sgBo3M6DahIMr89UFXOPrlgCHM/w220/default.jpg</volume-cover>
-<chapters>
-<chapter>
 <chapter-name>Người nô lệ hạnh phúc trong hầm mỏ - 幸せな鉱山奴隷</chapter-name>
 <chapter-date>01/06/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>Một Mình Thôi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/61-mot-minh-thoi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/890-10-sai-no-saikyou-madoushi/c18750-nguoi-no-le-hanh-phuc-trong-ham-mo</update-link>
+</update>
+<update>
+<volume-name>WN</volume-name>
+<volume-cover>https://1.bp.blogspot.com/-cMT9P9SCKCw/WS2n5BjS_yI/AAAAAAAAU64/QhEjOM48X8sgBo3M6DahIMr89UFXOPrlgCHM/w220/default.jpg</volume-cover>
 <chapter-name>Hương vị của tự do - 自由の味は</chapter-name>
 <chapter-date>02/06/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>Một Mình Thôi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/61-mot-minh-thoi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/890-10-sai-no-saikyou-madoushi/c18792-huong-vi-cua-tu-do</update-link>
+</update>
+<update>
+<volume-name>WN</volume-name>
+<volume-cover>https://1.bp.blogspot.com/-cMT9P9SCKCw/WS2n5BjS_yI/AAAAAAAAU64/QhEjOM48X8sgBo3M6DahIMr89UFXOPrlgCHM/w220/default.jpg</volume-cover>
 <chapter-name>Lần đầu tiên - はじめて</chapter-name>
 <chapter-date>07/06/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>Một Mình Thôi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/61-mot-minh-thoi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/890-10-sai-no-saikyou-madoushi/c19062-lan-dau-tien</update-link>
+</update>
+<update>
+<volume-name>WN</volume-name>
+<volume-cover>https://1.bp.blogspot.com/-cMT9P9SCKCw/WS2n5BjS_yI/AAAAAAAAU64/QhEjOM48X8sgBo3M6DahIMr89UFXOPrlgCHM/w220/default.jpg</volume-cover>
 <chapter-name>Vô hạn thiếu nữ - 無限少女</chapter-name>
 <chapter-date>17/06/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>Một Mình Thôi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/61-mot-minh-thoi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/890-10-sai-no-saikyou-madoushi/c19532-vo-han-thieu-nu</update-link>
+</update>
+<update>
+<volume-name>WN</volume-name>
+<volume-cover>https://1.bp.blogspot.com/-cMT9P9SCKCw/WS2n5BjS_yI/AAAAAAAAU64/QhEjOM48X8sgBo3M6DahIMr89UFXOPrlgCHM/w220/default.jpg</volume-cover>
 <chapter-name>Bé muốn biết thật nhiều thứ - いっぱい知りたい</chapter-name>
 <chapter-date>15/06/2017</chapter-date>
-</chapter>
-<chapter>
+<update-group>
+<group-name>Một Mình Thôi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/61-mot-minh-thoi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/890-10-sai-no-saikyou-madoushi/c19656-be-muon-biet-that-nhieu-thu</update-link>
+</update>
+<update>
+<volume-name>WN</volume-name>
+<volume-cover>https://1.bp.blogspot.com/-cMT9P9SCKCw/WS2n5BjS_yI/AAAAAAAAU64/QhEjOM48X8sgBo3M6DahIMr89UFXOPrlgCHM/w220/default.jpg</volume-cover>
 <chapter-name>Mua sắm - おかいもの</chapter-name>
 <chapter-date>20/06/2017</chapter-date>
-</chapter>
-</chapters>
-</volume>
-</volumes>
-</project>
-<project>
-<name>10 Sai no Saikyou Madoushi</name>
-<alter-names/>
-<author>Amano Seiju</author>
-<synopsis>Pháp sư mạnh nhất không biết mình là “người mạnh nhất” đã xuất hiện!Cô bé Ferris 10 tuổi là nô lệ làm việc ở khu mỏ khai thác ma thạch.Tuy nhiên, khi bé được phát hiện đang mang trong mình tài năng khủng khiếp về phép thuật, bé buộc phải đi học.Được những con người tốt bụng quan tâm, tài năng của Ferris đã phát triển với tốc độ chóng mặt.Và rồi các thế lực trong bóng tối đã rục rịch để có được sức mạnh đó.Chỉ có Ferris không biết bản thân mình là một pháp sư tuyệt vời như thế nào.Như mọi ngày, miễn là Ferris được ăn cơm no bụng là đủ mãn nguyện rồi!( Bê từ bên hàng xóm sang :)) )</synopsis>
-<tags>
-<tag>School Life</tag>
-<tag>Adventure</tag>
-<tag>Comedy</tag>
-<tag>Fantasy</tag>
-<tag>Web Novel</tag>
-</tags>
-<view>4,238</view>
-<volumes>
-<volume>
-<volume-name>Tập 01</volume-name>
-<volume-cover>https://1.bp.blogspot.com/-17HznZPzAYQ/Wf3b88abxiI/AAAAAAAAx0Q/L1DGMvTBlzklhB-h11CiJCaN0n0WDOrUQCHMYCw/w220/default.jpg</volume-cover>
-<chapters>
-<chapter>
-<chapter-name>Chương 07 : Con đường tới trường - Phần 1</chapter-name>
-<chapter-date>05/11/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 07 : Con đường tới trường - Phần 2</chapter-name>
-<chapter-date>10/11/2017</chapter-date>
-</chapter>
-</chapters>
-</volume>
-</volumes>
-</project>
-<project>
-<name>1000 nin no Homunkurusu no Shoujo tachi ni Kakomarete Isekai Kenkoku</name>
-<alter-names>
-<alter-name>Thành lập một quốc gia ở thế giới khác vì để bảo vệ 1000 cô gái Humunculus</alter-name>
-</alter-names>
-<author>Hatsue Renge</author>
-<synopsis>Bị triệu hồi bởi nghi thức hồi sinh ác thần ở thế giới khác, một học sinh cấp 2 bình thường Furutera isshi vì 1000 cô gái Humunculus sẽ được hiến tế. Khi nghe những hành động tàn nhẫn của những con người đã gây ra cho họ như một công cụ, cậu quyết định thành lập một quốc gia cho Humunculus</synopsis>
-<tags>
-<tag>Adventure</tag>
-<tag>Fantasy</tag>
-<tag>Harem</tag>
-<tag>Web Novel</tag>
-</tags>
-<view>14,984</view>
-<volumes>
-<volume>
-<volume-name>Tập 01</volume-name>
-<volume-cover>img/nocover.png</volume-cover>
-<chapters>
-<chapter>
-<chapter-name>Chương 01</chapter-name>
-<chapter-date>26/11/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 02</chapter-name>
-<chapter-date>30/11/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 03</chapter-name>
-<chapter-date>30/11/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 04</chapter-name>
-<chapter-date>30/11/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 05</chapter-name>
-<chapter-date>06/12/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 06</chapter-name>
-<chapter-date>07/12/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 07</chapter-name>
-<chapter-date>09/12/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 08</chapter-name>
-<chapter-date>12/12/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 09</chapter-name>
-<chapter-date>19/12/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 10</chapter-name>
-<chapter-date>19/12/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 11</chapter-name>
-<chapter-date>19/12/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 12</chapter-name>
-<chapter-date>19/12/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 13</chapter-name>
-<chapter-date>23/12/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 14</chapter-name>
-<chapter-date>25/12/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 15</chapter-name>
-<chapter-date>27/12/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 16</chapter-name>
-<chapter-date>02/01/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 17</chapter-name>
-<chapter-date>03/01/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 18</chapter-name>
-<chapter-date>04/01/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 19</chapter-name>
-<chapter-date>07/01/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 20</chapter-name>
-<chapter-date>12/01/2018</chapter-date>
-</chapter>
-</chapters>
-</volume>
-</volumes>
-</project>
-<project>
-<name>29-sai Dokushin wa Isekai de Jiyuu ni Ikita......katta</name>
-<alter-names>
-<alter-name>２９歳独身は異世界で自由に生きた…かった</alter-name>
-<alter-name>29-Years-Old Bachelor Was… Brought to a Different World to Live Freely</alter-name>
-<alter-name>A 29 years old guy living single, transported to a new world to live freely... at least he wanted to</alter-name>
-</alter-names>
-<author>リュート</author>
-<synopsis>Một anh main 29 tuổi còn độc thân được qua thế giới khác mà mình từng mong muốn…Từ những ngày đầu khi anh đăng ký vào Guild mạo hiểm giả, anh gặp một cô gái và đã miễn cưỡng phải cưới cô ấy.Hơn mười ngày sau, những người trong đội hiệp sĩ và phép thuật của đất nước đã phát hiện và gọi anh là một anh hùng…Anh sẽ xử lý việc này ra sao đây?Liệu anh có chấp nhận làm một anh hùng đi giết quái vật mạnh và cứu giúp người dân không?</synopsis>
-<tags>
-<tag>Action</tag>
-<tag>Adventure</tag>
-<tag>Drama</tag>
-<tag>Ecchi</tag>
-<tag>Fantasy</tag>
-<tag>Harem</tag>
-<tag>Psychological</tag>
-<tag>Romance</tag>
-<tag>Seinen</tag>
-<tag>Slice of Life</tag>
-<tag>Web Novel</tag>
-</tags>
-<view>48,390</view>
-<volumes>
-<volume>
-<volume-name>Tập 1</volume-name>
-<volume-cover>https://2.bp.blogspot.com/-JqmWRiP7djY/WovLFCmRdwI/AAAAAAAA_2I/QsyxGPYZI6AJQU0mtPtFoOtx4NBXwmVKACHMYCw/w220/default.jpg</volume-cover>
-<chapters>
-<chapter>
-<chapter-name>Minh họa Vol.1</chapter-name>
-<chapter-date>21/02/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Mở đầu</chapter-name>
-<chapter-date>12/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 1. Khi tôi nhận ra, tôi đã ở một thế giới khác</chapter-name>
-<chapter-date>12/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 2. Khi đến Guild mạo hiểm giả, tôi đã bị đánh</chapter-name>
-<chapter-date>12/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 3. Trong lúc tập luyện, tôi đã được thổ lộ</chapter-name>
-<chapter-date>12/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 4. Tôi đã xơi được cái gì đó rất ngon trong ngày đầu tiên</chapter-name>
-<chapter-date>31/05/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 5. Mạo hiểm giả là công việc kinh doanh rất có lợi nhuận</chapter-name>
-<chapter-date>15/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 6. Tôi đã nghĩ nó chỉ là một trò đùa, nhưng nó lại là sự thật</chapter-name>
-<chapter-date>15/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 7. Đánh vào hang ổ của lũ goblins nhưng tôi lại gặp được thứ khác</chapter-name>
-<chapter-date>15/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 8. Sau buổi hẹn hò, tôi vô tình cầu hôn cô ấy</chapter-name>
-<chapter-date>15/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 9. Khi đến doanh trại đội kỵ sĩ, tôi đã được công nhận là anh hùng</chapter-name>
-<chapter-date>26/05/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 10. Tôi có cảm giác xấu, vì vậy tôi chạy trốn</chapter-name>
-<chapter-date>26/05/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 11. Tôi bị sát thủ tấn công, vì vậy tôi giết chúng</chapter-name>
-<chapter-date>26/05/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 12. Khi tới thủ đô, chúng tôi diện kiến nhà Vua</chapter-name>
-<chapter-date>26/05/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 13. Chúng tôi thưởng thức cơm trắng sau một thời gian dài</chapter-name>
-<chapter-date>26/05/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 14. Tôi đi dạo trong chợ ở thủ đô</chapter-name>
-<chapter-date>26/05/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 15. Tôi đã mua một người hầu tại chợ buôn nô lệ</chapter-name>
-<chapter-date>26/05/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 16. Bình tĩnh lại và nói chuyện nào</chapter-name>
-<chapter-date>27/05/2018</chapter-date>
-</chapter>
-</chapters>
-</volume>
-</volumes>
-</project>
-<project>
-<name>400 Years Old Virgin Demon King</name>
-<alter-names>
-<alter-name>ma vương 400 tuổi còn trinh</alter-name>
-<alter-name>四百年間童貞を守って魔王になったけど、女性との付き合い方がわからない件</alter-name>
-<alter-name/>
-</alter-names>
-<author>結城藍人</author>
-<synopsis>Chuyện về ma vương 400 tuổi còn trinh đi kiếm vợ và một gái muốn cưới hắn để nắm giữ quyền lực to lớn.</synopsis>
-<tags>
-<tag>Comedy</tag>
-</tags>
-<view>5,230</view>
-<volumes>
-<volume>
-<volume-name>Tập 01</volume-name>
-<volume-cover>img/nocover.png</volume-cover>
-<chapters>
-<chapter>
-<chapter-name>Chương 01 : Trở thành quỷ vương, nhưng mất đi mục đích và ý nghĩa.</chapter-name>
-<chapter-date>21/01/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 02 : Mục tiêu cao cả của ma vương vĩ đại</chapter-name>
-<chapter-date>23/01/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 03 : Ma vương thực hiện hóa lý tưởng.</chapter-name>
-<chapter-date>27/05/2018</chapter-date>
-</chapter>
-</chapters>
-</volume>
-</volumes>
-</project>
-<project>
-<name>86 -eightysix-</name>
-<alter-names>
-<alter-name>69</alter-name>
-</alter-names>
-<author>Asato Asato</author>
-<synopsis>Cộng hòa San Magnolia.Quốc gia này từ lâu đã chịu phải ách xâm lược từ những Legion - chiến xa không người lái của phía Đế quốc. Để đáp trả lại mối đe doạ đó, nước Cộng hoà cũng phát triển thành công thứ công nghệ tương tự và đẩy lùi sự tấn công của kẻ thù mà không chịu thương vong gì. Thế nhưng... đó chỉ là sự thật được rêu rao bởi truyền thông. Thực tế vẫn còn nhiều tử sĩ. Ngoài 85 quận thuộc Cộng hòa còn có một đơn vị hành chính khác - Quận thứ 86 không tồn tại. Đây chính là nơi mà các thanh thiếu niên thuộc biệt đội “86” chiến đấu ngày đêm trên các cỗ máy không người để bảo vệ đất nước...Shinn là người trực tiếp đưa các chiến binh quyết tử ấy ra nơi chiến trận, còn Lena là một sĩ quan chỉ huy tiểu đội từ hậu phương bằng giao thức liên lạc đặc biệt...Câu chuyện về những tranh đấu và ly biệt giữa hai người họ từ đó bắt đầu.</synopsis>
-<tags>
-<tag>Action</tag>
-<tag>Drama</tag>
-<tag>Science Fiction</tag>
-</tags>
-<view>11,699</view>
-<volumes>
-<volume>
-<volume-name>Tập 1</volume-name>
-<volume-cover>https://1.bp.blogspot.com/-PuvHLIGnXx8/WlOEUxwCf7I/AAAAAAAA5gw/mkMz4Px67mY4xED7cz25MKXgCur4dHqxwCHMYCw/w220/default.png</volume-cover>
-<chapters>
-<chapter>
-<chapter-name>Minh hoạ</chapter-name>
-<chapter-date>09/01/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Mở đầu: Hoa anh túc đỏ nở trên chiến trường</chapter-name>
-<chapter-date>31/01/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 1: Chiến trường có số người chết là không</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 2: Im Westen nichts Neues</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 3: Anh hùng đứng trước địa ngục âm u</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Giao đoạn: Kị sĩ không đầu</chapter-name>
-<chapter-date>31/01/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 4: Mini nomen est, quia multi sumus</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Giao đoạn: Kị sĩ không đầu II</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 5: Vinh quang chết tiệt chiếu rọi binh đoàn tiên phong (Fucking glory to Spearhead squadron)</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Giao đoạn: Kị sĩ không đầu III</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 6: Ít nhất làm một con người (Fiat justitia ruat caelum)</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Giao đoạn : Kị sĩ không đầu IV</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 7: Tạm biệt (Shalon Chaverim)</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Kết thúc: Nữ hoàng máu xuất hiện</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Kết thúc 2: Khởi động</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Lời bạt</chapter-name>
-<chapter-date>16/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Truyện ngắn 1</chapter-name>
-<chapter-date>30/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Truyện ngắn 2</chapter-name>
-<chapter-date>30/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Minh họa</chapter-name>
-<chapter-date>08/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Mở đầu: Nữ hoàng đã đưa binh đoàn tới</chapter-name>
-<chapter-date>08/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 1: Vó ngựa Valkyrie</chapter-name>
-<chapter-date>08/04/2018</chapter-date>
-</chapter>
-</chapters>
-</volume>
-<volume>
-<volume-name>Tập 1</volume-name>
-<volume-cover>https://1.bp.blogspot.com/-PuvHLIGnXx8/WlOEUxwCf7I/AAAAAAAA5gw/mkMz4Px67mY4xED7cz25MKXgCur4dHqxwCHMYCw/w220/default.png</volume-cover>
-<chapters>
-<chapter>
-<chapter-name>Minh hoạ</chapter-name>
-<chapter-date>09/01/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Mở đầu: Hoa anh túc đỏ nở trên chiến trường</chapter-name>
-<chapter-date>31/01/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 1: Chiến trường có số người chết là không</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 2: Im Westen nichts Neues</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 3: Anh hùng đứng trước địa ngục âm u</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Giao đoạn: Kị sĩ không đầu</chapter-name>
-<chapter-date>31/01/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 4: Mini nomen est, quia multi sumus</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Giao đoạn: Kị sĩ không đầu II</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 5: Vinh quang chết tiệt chiếu rọi binh đoàn tiên phong (Fucking glory to Spearhead squadron)</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Giao đoạn: Kị sĩ không đầu III</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 6: Ít nhất làm một con người (Fiat justitia ruat caelum)</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Giao đoạn : Kị sĩ không đầu IV</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 7: Tạm biệt (Shalon Chaverim)</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Kết thúc: Nữ hoàng máu xuất hiện</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Kết thúc 2: Khởi động</chapter-name>
-<chapter-date>09/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Lời bạt</chapter-name>
-<chapter-date>16/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Truyện ngắn 1</chapter-name>
-<chapter-date>30/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Truyện ngắn 2</chapter-name>
-<chapter-date>30/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Minh họa</chapter-name>
-<chapter-date>08/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Mở đầu: Nữ hoàng đã đưa binh đoàn tới</chapter-name>
-<chapter-date>08/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 1: Vó ngựa Valkyrie</chapter-name>
-<chapter-date>08/04/2018</chapter-date>
-</chapter>
-</chapters>
-</volume>
-</volumes>
-</project>
-<project>
-<name>99th vampire princess ~The last vampire~</name>
-<alter-names/>
-<author>Kenji Saitou</author>
-<synopsis>"Lores" - những hình thể đáng kể được sinh ra từ những truyền thuyết thành phố. Và học sinh trung học Tsukumo Jin, người đã vô tình giải phóng "truyền thuyết về ma cà rồng" mạnh mẽ nhất, giờ đây là người quản gia (và người yêu) của Sylvia, công chúa ma cà rồng, người chọn để lấy hình dạng của một cô bé .Jin cũng được giao nhiệm vụ cứu Shigure bằng phông ấn nghi thức 'liên lạc với người chết' một truyền thuyết thành phố với sự giúp đỡ của một sinh viên bí ẩn chuyển trường Ayase. Đó là khởi đầu của cuộc chiến với "ma cà rồng cuối cùng", thực thể bí ẩn tổ chức những sự kiện này ...</synopsis>
-<tags>
-<tag>Action</tag>
-<tag>Fantasy</tag>
-<tag>Romance</tag>
-<tag>Supernatural</tag>
-</tags>
-<view>4,065</view>
-<volumes>
-<volume>
-<volume-name>Mở đầu</volume-name>
-<volume-cover>https://2.bp.blogspot.com/-yXKPzx-lXhI/WtNs3YdydOI/AAAAAAABHz0/rfS6Zt82uaAklrxEnK9KJYlOMHMRBWiowCHMYCw/w220/default.jpg</volume-cover>
-<chapters>
-<chapter>
-<chapter-name>Tôi và truyền thuyết</chapter-name>
-<chapter-date>16/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Part 1</chapter-name>
-<chapter-date>16/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Part 2</chapter-name>
-<chapter-date>16/04/2018</chapter-date>
-</chapter>
-</chapters>
-</volume>
-<volume>
-<volume-name>Mở đầu</volume-name>
-<volume-cover>https://2.bp.blogspot.com/-yXKPzx-lXhI/WtNs3YdydOI/AAAAAAABHz0/rfS6Zt82uaAklrxEnK9KJYlOMHMRBWiowCHMYCw/w220/default.jpg</volume-cover>
-<chapters>
-<chapter>
-<chapter-name>Tôi và truyền thuyết</chapter-name>
-<chapter-date>16/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Part 1</chapter-name>
-<chapter-date>16/04/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Part 2</chapter-name>
-<chapter-date>16/04/2018</chapter-date>
-</chapter>
-</chapters>
-</volume>
-</volumes>
-</project>
-<project>
-<name>A Monster Who Level Up</name>
-<alter-names>
-<alter-name>레벨업하는 몬스터</alter-name>
-</alter-names>
-<author>Jee Gab Song; 지갑송</author>
-<synopsis>Đây là câu chuyện về một chàng trai có tên Kim Sae – Jin, người mà một ngày nọ, bằng cách khó hiểu nào đó, tỉnh dậy với hình hài của một quái thú. Hãy dõi bước cùng cậu trên những chuyến phiêu lưu đầy hiểm nguy để lấy lại cuộc sống của một con Người trong khi tiến hóa và ngày càng trở nên thích nghi hơn với dạng quái vật. Điều này có lẽ…phức tạp, phần nào.</synopsis>
-<tags>
-<tag>Action</tag>
-<tag>Adventure</tag>
-<tag>Drama</tag>
-<tag>Fantasy</tag>
-<tag>Harem</tag>
-<tag>Seinen</tag>
-</tags>
-<view>5,010</view>
-<volumes>
-<volume>
-<volume-name>Nội Dung</volume-name>
-<volume-cover>https://3.bp.blogspot.com/-FE3dETig-s8/Wpcb6PcbbzI/AAAAAAABBC4/FObpfRwLtT0GkXJt9Y1bdBijMZmfURnWACHMYCw/w220/default.jpg</volume-cover>
-<chapters>
-<chapter>
-<chapter-name>Mở Đầu</chapter-name>
-<chapter-date>01/03/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 01 : Trở Thành Sói (1)</chapter-name>
-<chapter-date>02/03/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 02 : Trở Thành Sói (2)</chapter-name>
-<chapter-date>02/03/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 03 : Trở Thành Sói (3)</chapter-name>
-<chapter-date>03/03/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 04 : Tấm Chân Tình Của Yêu Tinh (1)</chapter-name>
-<chapter-date>06/03/2018</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Chương 05 : Tấm Chân Tình Của Yêu Tinh (2).</chapter-name>
-<chapter-date>12/03/2018</chapter-date>
-</chapter>
-</chapters>
-</volume>
-</volumes>
-</project>
-<project>
-<name>A Simple Survey</name>
-<alter-names/>
-<author>Kamachi Kazuma</author>
-<synopsis>Một số sinh viên đại học được đưa cho một cuộc khảo sát đơn giản, trong đó họ phải xem một vài đoạn phim ngắn và xếp hạng chúng theo tứ tự ưu tiên. Độc giả cũng tham gia vào cuộc thảo sát cùng với họ với việc những đoạn phim ngắn được kể lại như là nhưng câu chuyện ngắn. Lời người dịch : Chỉ đơn giản là đọc qua 24 mẩu chuyện, đánh số các mẩu chuyện theo thứ tự ưa thích của bạn, rồi lại tiếp tục đọc. Bạn sẽ biết thứ gì đang chờ đợi bạn.</synopsis>
-<tags>
-<tag>Horror</tag>
-<tag>Mystery</tag>
-<tag>Supernatural</tag>
-<tag>Fantasy</tag>
-<tag>Science Fiction</tag>
-<tag>Suspense</tag>
-</tags>
-<view>26,549</view>
-<volumes>
-<volume>
-<volume-name>Tập 1</volume-name>
-<volume-cover>https://3.bp.blogspot.com/-6E-MOTdlBBw/WO26LzbfBnI/AAAAAAAAK_o/MvXYkzh5vYY/w220/book_708.jpg</volume-cover>
-<chapters>
-<chapter>
-<chapter-name>Minh họa</chapter-name>
-<chapter-date>12/04/2017</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Trước Khi Bắt Đầu Cuộc Khảo Sát</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 1: Một con Virus máy tính phát tán gần đây</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 2: Xin cứ tự nhiên tham khảo ý kiến của chúng tôi (nhưng phải tự chịu rủi ro)</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 03: Bằng bất kỳ cách gì cần thiết</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 04: Nhẫn thuật Ninja –Thuật lặn sâu trong giấc ngủ ©</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 05: Cẩn thận với những kiểu lừa đảo mới</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 06: 385D</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 07: Một cái hộp tráp thoải mái cho bạn.</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 08: Mạch thời gian bị tắc nghẽn</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 09: Kể cả những chuyện dưới địa ngục cũng đều được quyết định bằng tiền mặt?</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 10: Vận mệnh lấy hình dạng của một mũi tên</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 11: Cô nàng vừa tới là vật thế chấp của một khoản vay không hoàn lại</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 12: Santa Claus được đào tạo như một tên trộm hào hoa</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Giữa chặng và nghỉ giải lao</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 13: Sao chúng ta không đi nhìm trộm một chút nhỉ?</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 14: Bạn có muốn thứ gì đó từ sê ri phim tài liệu Human Face không?</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 15: Thật hơn cả đồ thật</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 16: Những chuyện được kể trong truyền thuyết</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 17: Các màu thuộc tính trên bảng màu</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 18: Thử thách không ngừng của đầu bếp Koutarou</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 19: Sự hợp nhất các hình tượng là vấn đề khẩn cấp.</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 20: Tất cả các loại đồ cúng.</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 21: Hãy nghĩ ra một ý nghĩa lãng mạn theo ngôn ngữ các loài hoa</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 22: Bài học thú vị nhất trên thế giới?</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>File 23: Lần này kỉ băng hà là thực.</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>FIle 24: Làm thế nào để hạ gục một kẻ thù hùng mạnh tuy không vượt quá hiểu biết của loài người</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Sau khi kết thúc bài khảo sát</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Giới thiệu các ứng viên</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Trường hợp của Harumi</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Trường hợp của Hotaru</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Trường hợp của Kozue</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Trường hợp của Aisu</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-<chapter>
-<chapter-name>Lời bạt</chapter-name>
-<chapter-date>11/11/2016</chapter-date>
-</chapter>
-</chapters>
-</volume>
-</volumes>
+<update-group>
+<group-name>Một Mình Thôi</group-name>
+<group-link>https://ln.hako.re/nhom-dich/61-mot-minh-thoi</group-link>
+</update-group>
+<update-link>https://ln.hako.re/truyen/890-10-sai-no-saikyou-madoushi/c19850-mua-sam</update-link>
+</update>
+</updates>
 </project>
 </projects>
+</project-page>

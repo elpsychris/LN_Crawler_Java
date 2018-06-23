@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
-<projects xmlns="http://t3.com/2018/xml"
+<project-page xmlns="http://t3.com/2018/xml"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           link="https://ln.hako.re/danh-sach"
           host="https://ln.hako.re">
-    
-</projects>
+
+</project-page>

@@ -1,4 +1,6 @@
 package crawler.repository;
 
-public class GenreRepo {
+import crawler.model.GenreEntity;
+
+public class GenreRepo extends AbstractRepo<GenreEntity> {
 }

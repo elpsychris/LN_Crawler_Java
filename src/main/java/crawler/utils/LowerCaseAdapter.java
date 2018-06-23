@@ -3,14 +3,14 @@ package crawler.utils;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 import java.util.Date;
 
-public class SqlDateAdapter extends XmlAdapter<Date, java.sql.Date> {
+public class LowerCaseAdapter extends XmlAdapter<String, String> {
     @Override
-    public java.sql.Date unmarshal(Date v) throws Exception {
-        return v == null ? null : new java.sql.Date(v.getTime());
+    public String unmarshal(String v) throws Exception {
+        return v.toLowerCase().trim();
     }
 
     @Override
-    public Date marshal(java.sql.Date v) throws Exception {
-        return v == null ? null : new Date(v.getTime());
+    public String marshal(String v) throws Exception {
+        return v.toLowerCase().trim();
     }
 }

@@ -1,19 +1,45 @@
 package crawler.model;
 
+import crawler.utils.ComUtils;
+import crawler.utils.SqlDateAdapter;
+import crawler.utils.SqlTimeAdapter;
+
 import javax.persistence.*;
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.sql.Timestamp;
 
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "UpdateEntity", propOrder = {
+        "updateId",
+        "updateName",
+        "updateVol",
+        "updateDate",
+        "updateGroup",
+        "updateLink",
+        "updateHash"
+})
 @Entity
-@Table(name = "Update", schema = "dbo", catalog = "NU_DB")
+@Table(name = "UpdateChap", schema = "dbo", catalog = "NU_DB")
 public class UpdateEntity {
+    @XmlElement(name = "id")
     private int updateId;
+    @XmlElement(name = "chapter-name")
     private String updateName;
+    @XmlElement(name = "volume-name")
     private String updateVol;
+    @XmlElement(name = "chapter-date")
+    @XmlJavaTypeAdapter(SqlTimeAdapter.class)
     private Timestamp updateDate;
-    private Integer updateGroup;
+    @XmlElement(name = "update-group")
+    private GroupEntity updateGroup;
+    @XmlElement(name = "update-link")
     private String updateLink;
+    @XmlElement(name = "update-hash")
+    private String updateHash;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "update_id")
     public int getUpdateId() {
         return updateId;
@@ -53,13 +79,13 @@ public class UpdateEntity {
         this.updateDate = updateDate;
     }
 
-    @Basic
-    @Column(name = "update_group")
-    public Integer getUpdateGroup() {
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "update_group", nullable = false)
+    public GroupEntity getUpdateGroup() {
         return updateGroup;
     }
 
-    public void setUpdateGroup(Integer updateGroup) {
+    public void setUpdateGroup(GroupEntity updateGroup) {
         this.updateGroup = updateGroup;
     }
 
@@ -71,6 +97,16 @@ public class UpdateEntity {
 
     public void setUpdateLink(String updateLink) {
         this.updateLink = updateLink;
+    }
+
+    @Basic
+    @Column(name = "update_hash")
+    public String getUpdateHash() {
+        return updateHash;
+    }
+
+    public void setUpdateHash(String updateHash) {
+        this.updateHash = updateHash;
     }
 
     @Override

@@ -8,6 +8,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.regex.Matcher;
@@ -18,7 +20,7 @@ public class ComUtils {
     private final static int RETRY_INTERVAL = 10000;
     private final static int TIMEOUT = 6000;
     private final static String XML_DECLARATION = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>";
-
+    private final static String HASH_ALGO = "MD5";
 
 
     public static Date getCurrentDate() {
@@ -132,6 +134,18 @@ public class ComUtils {
 
         return stringBuffer;
     }
+
+    public static String hashString(String src) {
+        try {
+            MessageDigest messageDigest = MessageDigest.getInstance(HASH_ALGO);
+            messageDigest.update(src.getBytes());
+            return new String(messageDigest.digest());
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 
 
 }

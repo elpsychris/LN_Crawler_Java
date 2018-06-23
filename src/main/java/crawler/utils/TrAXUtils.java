@@ -17,6 +17,7 @@ public class TrAXUtils {
     public static DOMResult transform(StreamSource from, StreamSource xsl) throws TransformerException, IOException, InterruptedException {
         factory.setURIResolver(uriResolver);
         DOMResult rsDOM = new DOMResult();
+//                StreamResult rsDOM = new StreamResult(new FileWriter(new File("src/main/java/crawl_temp/result.xml")));
         Transformer transformer = factory.newTransformer(xsl);
         transformer.transform(from, rsDOM);
         return rsDOM;
