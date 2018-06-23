@@ -5,12 +5,14 @@ import crawler.utils.HibernateUtils;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.hibernate.resource.transaction.spi.TransactionStatus;
 
 import java.util.List;
 
 public abstract class AbstractRepo<T> implements IRepo<T> {
     SessionFactory sessionFactory;
+    String idKey = null;
 
     public AbstractRepo() {
         sessionFactory = HibernateUtils.getSessionFactory();
@@ -67,6 +69,22 @@ public abstract class AbstractRepo<T> implements IRepo<T> {
     @Override
     public List<T> query(Criteria criteria) {
         return criteria.list();
+    }
+
+    protected T findExist(Class<T> sampleClass, String key) throws IllegalAccessException, InstantiationException {
+        if (idKey == null) {
+            System.out.println("idKey cannot be null");
+            return null;
+        }
+        Session session = sessionFactory.getCurrentSession();
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(sampleClass);
+        criteria.add(Restrictions.like(idKey, key));
+        if (criteria.list().isEmpty()) {
+            return null;
+        } else {
+            return (T) criteria.list().get(0);
+        }
     }
 }
 
