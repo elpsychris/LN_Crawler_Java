@@ -10,15 +10,15 @@ import org.hibernate.resource.transaction.spi.TransactionStatus;
 import java.util.List;
 
 public abstract class AbstractRepo<T> implements IRepo<T> {
-    private Session session;
+    SessionFactory sessionFactory;
 
     public AbstractRepo() {
-        SessionFactory sessionFactory = HibernateUtils.getSessionFactory();
-        this.session = sessionFactory.getCurrentSession();
+        sessionFactory = HibernateUtils.getSessionFactory();
     }
 
     @Override
     public void add(T item) {
+        Session session = sessionFactory.getCurrentSession();
         try {
             session.getTransaction().begin();
             session.save(item);
@@ -34,6 +34,7 @@ public abstract class AbstractRepo<T> implements IRepo<T> {
 
     @Override
     public void update(T item) {
+        Session session = sessionFactory.getCurrentSession();
         try {
             session.getTransaction().begin();
             session.update(item);
@@ -49,6 +50,7 @@ public abstract class AbstractRepo<T> implements IRepo<T> {
 
     @Override
     public void remove(T item) {
+        Session session = sessionFactory.getCurrentSession();
         try {
             session.getTransaction().begin();
             session.delete(item);
