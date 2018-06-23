@@ -1,5 +1,6 @@
 package crawler.model;
 
+import crawler.utils.GenreAdapter;
 import crawler.utils.SqlDateAdapter;
 import crawler.utils.ViewHakoAdapter;
 
@@ -59,6 +60,7 @@ public class ProjectEntity {
 
     @XmlElementWrapper(name = "genres")
     @XmlElement(name = "genre")
+    @XmlJavaTypeAdapter(GenreAdapter.class)
     private Set<GenreEntity> genres = new HashSet<>();
 
     @XmlElementWrapper(name = "updates")

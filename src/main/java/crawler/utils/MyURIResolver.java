@@ -12,9 +12,13 @@ public class MyURIResolver implements URIResolver {
     private static volatile boolean isStop = false;
     private static volatile boolean isPause = false;
     private static InputStream empty = null;
+
+
     @Override
     public Source resolve(String href, String base) throws TransformerException {
-        System.out.println(href);
+        Logger.getLogger().info("Resolving content from: " + href);
+
+
         StringBuffer emptyHtml = new StringBuffer();
         emptyHtml.append("<html xmlns=\"http://www.w3.org/1999/xhtml\"></html>");
         empty = new ByteArrayInputStream(emptyHtml.toString().getBytes());
@@ -22,18 +26,19 @@ public class MyURIResolver implements URIResolver {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                Logger.getLogger().log(Logger.LOG_LEVEL.ERROR, "Crawler cannot be paused", e);
             }
-        };
+        }
+        ;
         if (href != null && !isStop) {
             try {
                 InputStream httpResult = ComUtils.getHttp(href);
                 StreamSource streamSource = preProcessInputStream(httpResult);
                 return streamSource;
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                Logger.getLogger().log(Logger.LOG_LEVEL.ERROR, "Crawler cannot be paused", e);
             } catch (IOException e) {
-                e.printStackTrace();
+                Logger.getLogger().log(Logger.LOG_LEVEL.ERROR, "Error in resolving content from URL", e);
             }
         }
 
@@ -42,17 +47,18 @@ public class MyURIResolver implements URIResolver {
 
     public void pause() {
         isPause = true;
-        System.out.println("Pause signal fired");
+        Logger.getLogger().info("Pause signal for Crawler fired");
     }
 
     public void stop() {
         isStop = true;
-        System.out.println("Stop signal fired");
+        Logger.getLogger().info("Stop signal for Crawler fired");
+
     }
 
     public void cont() {
         isPause = false;
-        System.out.println("Continue signal fired");
+        Logger.getLogger().info("Continue signal for Crawler fired");
     }
 
     private StreamSource preProcessInputStream(InputStream httpResult) throws IOException {
@@ -60,7 +66,6 @@ public class MyURIResolver implements URIResolver {
         InputStream htmlResult = new ByteArrayInputStream(stringBuffer.toString().getBytes());
         return new StreamSource(htmlResult);
     }
-
 
 
 }

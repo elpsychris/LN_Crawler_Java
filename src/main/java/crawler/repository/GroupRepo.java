@@ -1,6 +1,7 @@
 package crawler.repository;
 
 import crawler.model.GroupEntity;
+import crawler.utils.Logger;
 
 public class GroupRepo extends AbstractRepo<GroupEntity> {
     public GroupRepo() {
@@ -11,9 +12,9 @@ public class GroupRepo extends AbstractRepo<GroupEntity> {
         try {
             return this.findExist(GroupEntity.class, obj.getGroupId());
         } catch (IllegalAccessException e) {
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.ERROR, e);
         } catch (InstantiationException e) {
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.ERROR, "Error in the findExist function", e);
         }
         return null;
     }

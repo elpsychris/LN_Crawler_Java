@@ -2,6 +2,7 @@ package crawler.repository;
 
 
 import crawler.utils.HibernateUtils;
+import crawler.utils.Logger;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -13,6 +14,7 @@ import java.util.List;
 public abstract class AbstractRepo<T> implements IRepo<T> {
     SessionFactory sessionFactory;
     String idKey = null;
+    Logger logger = Logger.getLogger();
 
     public AbstractRepo() {
         sessionFactory = HibernateUtils.getSessionFactory();
@@ -30,7 +32,7 @@ public abstract class AbstractRepo<T> implements IRepo<T> {
             if (session.getTransaction().getStatus() == TransactionStatus.ACTIVE) {
                 session.getTransaction().rollback();
             }
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.ERROR, "Add transaction failed: " + item.toString(), e);
         }
     }
 
@@ -46,7 +48,7 @@ public abstract class AbstractRepo<T> implements IRepo<T> {
             if (session.getTransaction().getStatus() == TransactionStatus.ACTIVE) {
                 session.getTransaction().rollback();
             }
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.ERROR, "Update transaction failed: " + item.toString(), e);
         }
     }
 
@@ -62,7 +64,7 @@ public abstract class AbstractRepo<T> implements IRepo<T> {
             if (session.getTransaction().getStatus() == TransactionStatus.ACTIVE) {
                 session.getTransaction().rollback();
             }
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.ERROR, "Remove transaction failed: " + item.toString(), e);
         }
     }
 

@@ -4,6 +4,7 @@ import crawler.model.ProjectEntity;
 import crawler.repository.ProjectRepo;
 import crawler.spider.Spider;
 import crawler.utils.HibernateUtils;
+import crawler.utils.Logger;
 import crawler.utils.MyURIResolver;
 
 import javax.xml.bind.JAXBException;
@@ -47,19 +48,21 @@ public class Main {
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
-        Spider spider = new Spider();
+        Logger logger = Logger.getLogger();
+        Spider spider = new Spider(logger);
+
         try {
             spider.start("src/main/java/crawler/xmlConfigs/hako_project.xml", "src/main/java/crawler/stylesheet/hako_style.xsl");
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.WARNING, "Stylesheet and config file not found", e);
         } catch (TransformerException e) {
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.ERROR, "Transformer exception", e);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.FATAL, e);
         } catch (JAXBException e) {
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.WARNING, e);
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.ERROR, e);
         }
     }
 }

@@ -2,6 +2,7 @@ package crawler.repository;
 
 import crawler.model.GenreEntity;
 import crawler.model.GroupEntity;
+import crawler.utils.Logger;
 
 public class GenreRepo extends AbstractRepo<GenreEntity> {
     public GenreRepo() {
@@ -12,9 +13,9 @@ public class GenreRepo extends AbstractRepo<GenreEntity> {
         try {
             return this.findExist(GenreEntity.class, obj.getGenreId());
         } catch (IllegalAccessException e) {
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.ERROR, e);
         } catch (InstantiationException e) {
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.ERROR, "Error in the findExist function", e);
         }
         return null;
     }

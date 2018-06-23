@@ -7,6 +7,7 @@ import org.hibernate.cfg.Configuration;
 
 public class HibernateUtils {
     private static SessionFactory sessionFactory = buildSessionFactory();
+    private static Logger logger = Logger.getLogger();
 
     private static boolean initSessionFactory() {
         Session session = sessionFactory.openSession();
@@ -15,18 +16,18 @@ public class HibernateUtils {
             session.createSQLQuery("SELECT 1;").list();
             return true;
         } catch (RuntimeException ex) {
-            ex.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.ERROR, ex);
         } finally {
-//            session.close();
+            session.close();
         }
 
-        System.out.println("Error sml!!");
+
         return false;
     }
 
     public static void closeSessionFactory() {
         sessionFactory.close();
-        System.out.println("Connection and Session Factory is closed");
+        logger.info("Hiber-Factory closed");
     }
 
     private static SessionFactory buildSessionFactory() {

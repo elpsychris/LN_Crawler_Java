@@ -13,6 +13,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CrawlerUtils {
+    private static Logger logger = Logger.getLogger();
 
     public static boolean checkCriteria(ElementSpecification criteria, StartElement startE) {
         if (checkSibling(criteria, startE)) {
@@ -102,6 +103,7 @@ public class CrawlerUtils {
 
                 } catch (XMLStreamException ex) {
 //                    ex.printStackTrace();
+                    logger.log(Logger.LOG_LEVEL.WARNING,  ex);
                 }
             }
         } catch (Exception e) {

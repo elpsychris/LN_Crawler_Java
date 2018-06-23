@@ -1,30 +1,39 @@
 package crawler.utils;
 
+import javassist.bytecode.ByteArray;
 import org.omg.PortableInterceptor.USER_EXCEPTION;
+import sun.rmi.runtime.Log;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ComUtils {
     private final static String USER_AGENT_HEADER = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11";
-    private final static int RETRY_INTERVAL = 10000;
+    private final static int RETRY_INTERVAL = 20000;
     private final static int TIMEOUT = 6000;
     private final static String XML_DECLARATION = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>";
     private final static String HASH_ALGO = "MD5";
+    private final static SimpleDateFormat timeFormatter = new SimpleDateFormat("ddMMyyyy:hhmmssSSS");
+    private final static SimpleDateFormat dateFormatter = new SimpleDateFormat("ddMMyyyy");
+    private final static Logger logger = Logger.getLogger();
 
 
-    public static Date getCurrentDate() {
-        return Calendar.getInstance().getTime();
+    public static String getCurrentTimeString() {
+        return timeFormatter.format(Calendar.getInstance().getTime());
+    }
+
+    public static String getCurrentDateString() {
+        return dateFormatter.format(Calendar.getInstance().getTime());
     }
 
     public static InputStream getHttp(String uri) throws IOException, InterruptedException {
@@ -36,18 +45,45 @@ public class ComUtils {
         while (cont) {
             try {
                 httpResult = connection.getInputStream();
+
                 cont = false;
-                Thread.sleep(1000);
             } catch (IOException e) {
-                System.out.println("Failed to connect to " + url);
-                System.out.println(e.getMessage());
-                Thread.sleep(10000);
+                logger.log(Logger.LOG_LEVEL.INFO, "Cannot connect to " + uri, e);
+                int waitTime = RETRY_INTERVAL;
+                // check retry-after Header
+                Map<String, List<String>> headers = connection.getHeaderFields();
+                List<String> retryAfter = headers.get("retry-after");
+                if (retryAfter != null) {
+                    waitTime = Integer.parseInt(retryAfter.get(0));
+                    logger.info("Found Retry-After Header in Response Object");
+                }
 
-                openConnection(url);
+                // check rate
+                StringBuilder content = new StringBuilder();
+                // check rate
+                content.append("\n=== INFORMATION ===");
+                for (Map.Entry<String, List<String>> header : headers.entrySet()) {
+                    if (header.getKey() == null) {
+                        continue;
+                    }
+                    if (header.getKey().toLowerCase().contains("limit")) {
+                        content.append("\n* " + header.getKey());
+                        for (String val : header.getValue()) {
+                            content.append("\n\t |" + val);
+                        }
+                    }
+                }
+                logger.info("Retry after: " + waitTime + "s");
+                logger.info(content.toString());
 
-                Thread.sleep(RETRY_INTERVAL);
+                if (waitTime > 200) {
+                    waitTime = RETRY_INTERVAL;
+                }
+
+                connection = openConnection(url);
+
+                Thread.sleep(waitTime * 1000);
                 cont = true;
-
             }
         }
 
@@ -57,7 +93,6 @@ public class ComUtils {
     private static URLConnection openConnection(URL url) throws IOException {
         URLConnection connection = url.openConnection();
         connection.setRequestProperty("User-Agent", USER_AGENT_HEADER);
-        connection.setReadTimeout(1000);
 
         return connection;
     }
@@ -99,7 +134,7 @@ public class ComUtils {
             line = line.replaceAll("<li class=\"filter-type_item\">", "");
 //            line = line.replaceAll("<li class=\"filter-type_item\">", "");
 
-            line = line.replace("<main class=\"sect-body none force-block-l clear long-text\" style=\"word-wrap: break-word;\"","<main class=\"sect-body none force-block-l clear long-text\" style=\"word-wrap: break-word;\">");
+            line = line.replace("<main class=\"sect-body none force-block-l clear long-text\" style=\"word-wrap: break-word;\"", "<main class=\"sect-body none force-block-l clear long-text\" style=\"word-wrap: break-word;\">");
 
             // (R) char and ... and non-breaking space char replacement
             line = line
@@ -125,7 +160,6 @@ public class ComUtils {
             }
 
 
-
         }
 
         String document = stringBuffer.toString();
@@ -146,6 +180,47 @@ public class ComUtils {
         return null;
     }
 
+    public static void writeToFile(File file, String msg) {
+        FileOutputStream fos = null;
+        OutputStreamWriter streamWriter = null;
+        BufferedWriter bufferedWriter = null;
+        try {
+            fos = new FileOutputStream(file, true);
+            streamWriter = new OutputStreamWriter(fos);
+            bufferedWriter = new BufferedWriter(streamWriter);
+
+            bufferedWriter.write(msg);
+            bufferedWriter.flush();
+        } catch (FileNotFoundException e) {
+            logger.log(Logger.LOG_LEVEL.INFO, "File " + file + " not found", e);
+        } catch (IOException e) {
+            logger.log(Logger.LOG_LEVEL.INFO, "BufferWriter unable to write", e);
+        } finally {
+            if (bufferedWriter != null) {
+                try {
+                    bufferedWriter.close();
+                } catch (IOException e) {
+                    logger.info("Cannot close BufferWriter");
+                }
+            }
+
+            if (streamWriter != null) {
+                try {
+                    streamWriter.close();
+                } catch (IOException e) {
+                    logger.info("Cannot close StreamWriter");
+                }
+            }
+
+            if (fos != null) {
+                try {
+                    fos.close();
+                } catch (IOException e) {
+                    logger.info("Cannot close FileOutputStream");
+                }
+            }
+        }
+    }
 
 
 }

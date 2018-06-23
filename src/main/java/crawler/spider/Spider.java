@@ -22,12 +22,15 @@ public class Spider {
     final String DEFAULT_PARENT_PATH = "src/main/java/crawl_temp";
     ProjectRepo projectRepo = null;
     DOMResult result = null;
+    private Logger logger = null;
 
-    public Spider() {
+    public Spider(Logger logger) {
+        this.logger = logger;
     }
 
-    public Spider(ProjectRepo projectRepo) {
+    public Spider(ProjectRepo projectRepo, Logger logger) {
         this.projectRepo = projectRepo;
+        this.logger = logger;
     }
 
 
@@ -43,16 +46,17 @@ public class Spider {
     }
 
     public void start(String configPath, String xslPath) throws IOException, TransformerException, InterruptedException, JAXBException {
-        Runnable thread = () -> {
-            try {
-                Thread.sleep(5000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            TrAXUtils.stop();
-        };
-        Thread thread1 = new Thread(thread);
-        thread1.start();
+//        Runnable thread = () -> {
+//            try {
+//                Thread.sleep(5000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            TrAXUtils.stop();
+//            Thread.interrupted();
+//        };
+//        Thread thread1 = new Thread(thread);
+//        thread1.start();
         this.result = this.crawl(configPath, xslPath);
 
         try {
@@ -60,14 +64,14 @@ public class Spider {
             Projects projects = JAXBUtils.<Projects>xmlToObject(this.result, schema, Projects.class);
             ProjectRepo projectRepo = new ProjectRepo();
             for (ProjectEntity project : projects.getProjects()) {
-                project.setProjectHash(project.hashCode()+"");
+                project.setProjectHash(project.hashCode() + "");
                 if (!projectRepo.checkExist(project)) {
                     projectRepo.add(project);
                 }
             }
 
         } catch (SAXException e) {
-            e.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.WARNING, "SAXException", e);
         }
 
 //        handler.onParsed(this.result);

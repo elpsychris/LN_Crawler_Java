@@ -13,6 +13,7 @@ import java.io.File;
 
 public class JAXBUtils {
     private final static SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+    private static Logger logger = Logger.getLogger();
 
     public static <T> T xmlToObject(DOMResult xml, Class<T>... classes) throws JAXBException {
         return xmlToObject(xml, null, classes);
@@ -30,7 +31,7 @@ public class JAXBUtils {
         try {
             object = (T) unmarshaller.unmarshal(xml.getNode());
         }catch (UnmarshalException ex) {
-            ex.printStackTrace();
+            logger.log(Logger.LOG_LEVEL.ERROR, "Error happened in the Unmarshalling progress", ex);
         }
         return object;
     }
@@ -49,17 +50,20 @@ class MyValidationEventHandler implements ValidationEventHandler {
 
     @Override
     public boolean handleEvent(ValidationEvent event) {
-        System.out.println("\nEVENT");
-        System.out.println("SEVERITY: " + event.getSeverity());
-        System.out.println("MESSAGE: " + event.getMessage());
-        System.out.println("LINKED EXCEPTION: " + event.getLinkedException());
-        System.out.println("LOCATOR");
-        System.out.println("\t\tLINE NUMBER: " + event.getLocator().getLineNumber());
-        System.out.println("\t\tCOL NUMBER: " + event.getLocator().getColumnNumber());
-        System.out.println("\tOFFSET: " + event.getLocator().getOffset());
-        System.out.println("OBJECT: " + event.getLocator().getObject());
-        System.out.println("\t\tNODE: " + event.getLocator().getNode());
-        System.out.println("\t\tURL: " + event.getLocator().getURL());
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("\nEVENT");
+        stringBuilder.append("\nSEVERITY: " + event.getSeverity());
+        stringBuilder.append("\nMESSAGE: " + event.getMessage());
+        stringBuilder.append("\nLINKED EXCEPTION: " + event.getLinkedException());
+        stringBuilder.append("\nLOCATOR");
+        stringBuilder.append("\n\t\tLINE NUMBER: " + event.getLocator().getLineNumber());
+        stringBuilder.append("\n\t\tCOL NUMBER: " + event.getLocator().getColumnNumber());
+        stringBuilder.append("\n\tOFFSET: " + event.getLocator().getOffset());
+        stringBuilder.append("\nOBJECT: " + event.getLocator().getObject());
+        stringBuilder.append("\n\t\tNODE: " + event.getLocator().getNode());
+        stringBuilder.append("\n\t\tURL: " + event.getLocator().getURL());
+
+        Logger.getLogger().log(Logger.LOG_LEVEL.WARNING, stringBuilder.toString(), null);
         return true;
     }
 }
