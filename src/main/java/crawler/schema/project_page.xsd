@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://t3.com/2018/project-page"
+            xmlns="http://t3.com/2018/project-page"
+            elementFormDefault="qualified">
+    <xsd:include schemaLocation="project.xsd"/>
+    <xsd:element name="project-page">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="next-page" type="xsd:string"/>
+                <xsd:element name="projects">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="project" type="project-type" minOccurs="0" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
