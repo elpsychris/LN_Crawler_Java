@@ -7,6 +7,10 @@ import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
 public class ProjectRepo extends AbstractRepo<ProjectEntity> {
+    public ProjectRepo() {
+        this.idKey = "projectId";
+    }
+
     public boolean checkExist(ProjectEntity project) {
         Session session = this.sessionFactory.getCurrentSession();
         session.beginTransaction();

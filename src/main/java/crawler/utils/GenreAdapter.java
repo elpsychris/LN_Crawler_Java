@@ -1,17 +1,19 @@
 package crawler.utils;
 
+import crawler.model.GenreEntity;
 import crawler.model.GroupEntity;
+import crawler.repository.GenreRepo;
 import crawler.repository.GroupRepo;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-public class GroupAdapter extends XmlAdapter<GroupEntity, GroupEntity> {
+public class GenreAdapter extends XmlAdapter<GenreEntity, GenreEntity> {
     @Override
-    public GroupEntity unmarshal(GroupEntity v) throws Exception {
-        GroupRepo groupRepo = new GroupRepo();
-        GroupEntity obj = groupRepo.findExist(v);
+    public GenreEntity unmarshal(GenreEntity v) throws Exception {
+        GenreRepo genreRepo = new GenreRepo();
+        GenreEntity obj = genreRepo.findExist(v);
         if (obj == null) {
-            groupRepo.add(v);
+            genreRepo.add(v);
             return v;
         } else {
             return obj;
@@ -19,7 +21,7 @@ public class GroupAdapter extends XmlAdapter<GroupEntity, GroupEntity> {
     }
 
     @Override
-    public GroupEntity marshal(GroupEntity v) throws Exception {
+    public GenreEntity marshal(GenreEntity v) throws Exception {
         return v;
     }
 }
