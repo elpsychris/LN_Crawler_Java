@@ -19,21 +19,19 @@ import java.util.Set;
 })
 @Table(name = "TransGroup", schema = "dbo", catalog = "NU_DB")
 public class GroupEntity {
-    private int groupId;
+    @XmlElement(name = "group-link")
+    private String groupId;
     @XmlElement(name = "group-name")
     private String groupName;
-    @XmlElement(name = "group-link")
-    private String groupContact;
     private Set<UpdateEntity> updates;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "group_id")
-    public int getGroupId() {
+    public String getGroupId() {
         return groupId;
     }
 
-    public void setGroupId(int groupId) {
+    public void setGroupId(String groupId) {
         this.groupId = groupId;
     }
 
@@ -67,14 +65,6 @@ public class GroupEntity {
         if (groupName != null ? !groupName.equals(that.groupName) : that.groupName != null) return false;
 
         return true;
-    }
-
-    public String getGroupContact() {
-        return groupContact;
-    }
-
-    public void setGroupContact(String groupContact) {
-        this.groupContact = groupContact;
     }
 
     @Override

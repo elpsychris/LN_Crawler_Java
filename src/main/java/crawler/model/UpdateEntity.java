@@ -1,6 +1,7 @@
 package crawler.model;
 
 import crawler.utils.ComUtils;
+import crawler.utils.GroupAdapter;
 import crawler.utils.SqlDateAdapter;
 import crawler.utils.SqlTimeAdapter;
 
@@ -32,6 +33,7 @@ public class UpdateEntity {
     @XmlJavaTypeAdapter(SqlTimeAdapter.class)
     private Timestamp updateDate;
     @XmlElement(name = "update-group")
+    @XmlJavaTypeAdapter(GroupAdapter.class)
     private GroupEntity updateGroup;
     @XmlElement(name = "update-link")
     private String updateLink;
@@ -79,7 +81,7 @@ public class UpdateEntity {
         this.updateDate = updateDate;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinColumn(name = "update_group", nullable = false)
     public GroupEntity getUpdateGroup() {
         return updateGroup;

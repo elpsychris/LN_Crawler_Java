@@ -60,7 +60,7 @@ public class Spider {
             Projects projects = JAXBUtils.<Projects>xmlToObject(this.result, schema, Projects.class);
             ProjectRepo projectRepo = new ProjectRepo();
             for (ProjectEntity project : projects.getProjects()) {
-                project.setProjectHash(ComUtils.hashString(project.getProjectLink()));
+                project.setProjectHash(project.hashCode()+"");
                 if (!projectRepo.checkExist(project)) {
                     projectRepo.add(project);
                 }
